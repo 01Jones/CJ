@@ -18,7 +18,7 @@ if option == 'Home':
 
 #pages
 
-st.image("/Users/collinjones/Desktop/abc/BS/kk.png")
+st.image("https://www.instagram.com/p/B4azfenFW8OjJ-Mn6m3mlSnWHQqVMvrSh7VwME0/")
 
 if option == 'Page 2':
     st.subheader("page 2 title")
