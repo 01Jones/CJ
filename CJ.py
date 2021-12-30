@@ -18,6 +18,8 @@ if option == 'Home':
 
 #pages
 
+st.image("https://unsplash.com/photos/doN0ZGtH6oQ")
+
 if option == 'Page 2':
     st.subheader("page 2 title")
 
