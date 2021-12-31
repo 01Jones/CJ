@@ -8,7 +8,7 @@ import datetime as dt
 
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Home', 'Page 2', 'Digital Assets', 'psge 4', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Comp', 'Digital Assets', 'psge 4', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
@@ -17,7 +17,7 @@ if option == 'Home':
 
 #pages
 
-if option == 'Page 2':
+if option == 'Comp':
     st.subheader("page 2 title")
 
 if option == 'Digital Assets':
@@ -28,9 +28,8 @@ if option == 'Framework':
 
 
 
-
 #Page 2
-if option == 'Page 2' :
+if option == 'Comp' :
     st.text("Correlation")
     
     tickers = ('VTI', 'SPY', 'BTC-USD', 'ETH-USD', 'AAPL', 'MSFT',)
