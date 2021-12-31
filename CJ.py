@@ -88,7 +88,7 @@ if option == 'Digital Assets' :
     col1_df = df[df.symbol == col1_selection]
     col2_df = df[df.symbol == col2_selection]
     col3_df = df[df.symbol == col3_selection]
-    col4_df = df[df.symbol == col4_selection]
+    col1_df = df[df.symbol == col4_selection]
     col5_df = df[df.symbol == col5_selection]
     col6_df = df[df.symbol == col6_selection]
     col7_df = df[df.symbol == col7_selection]
