@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib as plt
 import requests
 import yfinance as yf
 import fredapi
@@ -8,17 +9,17 @@ import datetime as dt
 
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Home', 'Comp', 'Digital Assets', 'psge 4', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic KPI Analysis', 'Digital Assets', 'psge 4', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
-    st.title("Collin Jones")
-    st.header("Portfolio")
+    st.title("Portfolio")
+    st.header("Collin Jones")
 
 #pages
 
-if option == 'Comp':
-    st.subheader("page 2 title")
+if option == 'Economic KPI Analysis':
+    st.subheader("Economic KPI Analysis")
 
 if option == 'Digital Assets':
     st.subheader("Digital Assets")
@@ -28,8 +29,9 @@ if option == 'Framework':
 
 
 
+
 #Page 2
-if option == 'Comp' :
+if option == 'Economic KPI Analysis' :
     st.text("Correlation")
     
     tickers = ('VTI', 'SPY', 'BTC-USD', 'ETH-USD', 'AAPL', 'MSFT',)
