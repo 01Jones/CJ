@@ -14,7 +14,7 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic KPI Analysis', 'Di
 if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
-    st.image("https://www.instagram.com/p/CYtq24RtNkp/")
+    st.video("https://www.instagram.com/p/CYtq24RtNkp/")
 
 #pages
 
