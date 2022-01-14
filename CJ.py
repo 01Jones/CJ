@@ -14,7 +14,11 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic KPI Analysis', 'Di
 if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
-    background-image: url("https://gfycat.com/agonizingobvioushochstettersfrog-network-loop-background-animation-background")
+     st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://gfycat.com/agonizingobvioushochstettersfrog-network-loop-background-animation-background")"""
 
 #pages
 
