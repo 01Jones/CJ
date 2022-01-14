@@ -15,7 +15,7 @@ if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
     st.video("https://storage.opensea.io/files/13c8e47f95b76b3f917e39a384983d79.svg")
-    st.color_picker(label, value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
+    color = st.color_picker('Pick A Color', '#00f900')
 
 #pages
 
