@@ -14,7 +14,7 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic KPI Analysis', 'Di
 if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
-    st.video("https://www.youtube.com/watch?v=9s9U8wDQC48")
+    st.video("https://gfycat.com/agonizingobvioushochstettersfrog-network-loop-background-animation-background")
 
 #pages
 
