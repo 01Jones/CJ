@@ -14,7 +14,7 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic KPI Analysis', 'Di
 if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
-    st.image("https://opensea.io/assets/0x226bf5293692610692e2c996c9875c914d2a7f73/3")
+    st.image("https://www.instagram.com/p/CYtq24RtNkp/")
 
 #pages
 
