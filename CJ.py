@@ -14,7 +14,7 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Performance', 'Digital Asse
 if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
-    st.video("https://nationalzoo.si.edu/webcams/panda-cam")
+    st.video("https://www.youtube.com/watch?v=F109TZt3nRc")
     
 
 #pages
