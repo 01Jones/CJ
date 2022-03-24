@@ -26,13 +26,6 @@ if option == 'Home':
 
 #pages
 
-
-    
-    
-    
-    
-    
-#Page 2
 if option == 'Valuation':
     st.subheader("DCF")
     
@@ -47,6 +40,12 @@ if option == 'Framework':
 
 
 
+#Page 2
+
+
+
+
+    
 
 #Page 3
 if option == 'Performance' :
