@@ -19,7 +19,7 @@ if option == 'Home':
     st.text(" ")
     st.text(" ")
     st.text(" ")
-    st.text("Please enjoy the livestreams")
+    st.text(" ")
             
             
     st.text('Live Streams')
