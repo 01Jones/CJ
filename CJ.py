@@ -15,6 +15,7 @@ if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
     st.video("https://www.youtube.com/watch?v=F109TZt3nRc")
+    st.video("https://www.youtube.com/watch?v=DY5RYp4sxYc")
     
 
 #pages
