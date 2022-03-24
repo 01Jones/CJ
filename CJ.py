@@ -14,9 +14,12 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation', 'Performance', 
 if option == 'Home':
     st.title("Collin Jones")
     st.header("Project")
-    st.text("Navigation with left sidebar")
+    st.text(" < Navigation with left sidebar")
     st.text("Asset Valuations, Performance Visualization, Digital Asset Tracker, Page 4, Framework")
-    
+    st.text(" ")
+    st.text("Please enjoy the livestreams')
+            
+            
     st.text('Live Streams')
     st.video("https://www.youtube.com/watch?v=JQnxefImhu8")
     st.video("https://www.youtube.com/watch?v=JJqXeRFsLjE")
