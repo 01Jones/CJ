@@ -26,13 +26,16 @@ if option == 'Home':
 
 #pages
 
-if option == 'Valuation':
+
     
     
     
     
     
 #Page 2
+if option == 'Valuation':
+    st.subheader("DCF")
+    
 if option == 'Performance':
     st.subheader("Economic KPI Analysis")
 
