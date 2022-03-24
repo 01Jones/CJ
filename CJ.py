@@ -14,8 +14,8 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic KPI Analysis', 'Di
 if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
-    st.video("https://storage.opensea.io/files/13c8e47f95b76b3f917e39a384983d79.svg")
-    color = st.color_picker('Pick A Color', '#00f900')
+    st.video("https://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_crown")
+    
 
 #pages
 
