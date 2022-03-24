@@ -8,13 +8,14 @@ import datetime as dt
 
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation', 'Performance', 'Digital Assets', 'psge 4', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation', 'Performance', 'Digital Assets', 'page 4', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
     st.title("Collin Jones")
     st.header("Project")
-    
+    st.text("Navigation with left sidebar")
+    st.text("Asset Valuations, Performance Visualization, Digital Asset Tracker, Page 4, Framework")
     
     st.text('Live Streams')
     st.video("https://www.youtube.com/watch?v=JQnxefImhu8")
