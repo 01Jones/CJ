@@ -12,8 +12,8 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Performance', 'Digital Asse
 
 #Title & Header
 if option == 'Home':
-    st.title("Portfolio")
-    st.header("Collin Jones")
+    st.title("Collin Jones")
+    st.header("Project")
     st.text('Live Streams')
     st.video("https://www.youtube.com/watch?v=JQnxefImhu8")
     st.video("https://www.youtube.com/watch?v=JJqXeRFsLjE")
