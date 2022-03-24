@@ -8,7 +8,7 @@ import datetime as dt
 
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Valuation', 'Home', 'Performance', 'Digital Assets', 'psge 4', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation', 'Performance', 'Digital Assets', 'psge 4', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
