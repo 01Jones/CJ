@@ -17,7 +17,7 @@ if option == 'Home':
     st.text(" < Navigation with left sidebar")
     st.text("Asset Valuations, Performance Visualization, Digital Asset Tracker, Page 4, Framework")
     st.text(" ")
-    st.text("Please enjoy the livestreams')
+    st.text("Please enjoy the livestreams")
             
             
     st.text('Live Streams')
