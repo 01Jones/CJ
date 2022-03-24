@@ -35,7 +35,7 @@ if option == 'Framework':
 if option == 'Economic KPI Analysis' :
     st.text("Correlation")
     
-    tickers = ('VTI', 'SPY', 'BTC-USD', 'ETH-USD', 'AAPL', 'MSFT',)
+    tickers = ('VTI', 'SPY', 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD')
 
     dropdown = st.multiselect('assets', tickers)
 
