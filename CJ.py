@@ -14,7 +14,7 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic KPI Analysis', 'Di
 if option == 'Home':
     st.title("Portfolio")
     st.header("Collin Jones")
-    st.video("www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_str")
+    st.video("https://www.youtube.com/watch?v=AdUw5RdyZxI")
     
 
 #pages
