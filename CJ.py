@@ -59,7 +59,7 @@ if option == 'Framework':
 if option == 'Performance' :
     st.text("Correlation")
     
-    tickers = ('VTI', 'SPY', 'DIA', 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD')
+    tickers = ('VTI', 'SPY', 'DIA', 'GME' 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD')
 
     dropdown = st.multiselect('assets', tickers)
 
