@@ -5,6 +5,8 @@ import requests
 import yfinance as yf
 import fredapi
 import datetime as dt
+from stmol import showmol
+import py3Dmo
 
 
 # Sidebar dropdown 
