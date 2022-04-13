@@ -21,7 +21,7 @@ if option == 'Home':
     st.text(" ")
   
     st.pydeck_chart(pdk.Deck(
-         map_style='mapbox://styles/mapbox/dark-v1'))
+         map_style='mapbox://styles/mapbox/dark-v9'))
        
             
  
