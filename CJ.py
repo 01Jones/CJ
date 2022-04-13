@@ -28,10 +28,11 @@ if option == 'Home':
          latitude=41.87,
          longitude=-87.62,
          zoom=11,
-         pitch=50,
-         layer = pdk.Layer(
-    "HexagonLayer",
-    HEXAGON_LAYER_DATA)))
+         pitch=50)))
+         
+        layer = pdk.Layer(
+         "HexagonLayer",
+          HEXAGON_LAYER_DATA)
        
   
 
