@@ -32,7 +32,7 @@ if option == 'Home':
          
   layer = pdk.Layer(
     "HexagonLayer",
-    HEXAGON_LAYER_DATA
+    HEXAGON_LAYER_DATA)
         
        
   
