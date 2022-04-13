@@ -7,6 +7,7 @@ import fredapi
 import datetime as dt
 import pydeck as pdk
 
+#Home Page
 
 # Sidebar dropdown 
 option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation', 'Performance', 'Digital Assets', 'page 4', 'Framework')) 
