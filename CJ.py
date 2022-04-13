@@ -23,7 +23,6 @@ if option == 'Home':
             
     arc_layer = pdk.Layer(
      "ArcLayer",
-       data=df,
       get_width="S000 * 2",
       get_source_position=["lng_h", "lat_h"],
       get_target_position=["lng_w", "lat_w"],
