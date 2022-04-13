@@ -29,13 +29,11 @@ if option == 'Home':
          longitude=-87.62,
          zoom=11,
          pitch=50)))
-         
-  layer = pdk.Layer(
+    layer = pdk.Layer(
     "HexagonLayer",
     HEXAGON_LAYER_DATA)
-        
-       
-  
+         
+ 
 
 #pages
 
