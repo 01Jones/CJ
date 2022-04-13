@@ -30,9 +30,9 @@ if option == 'Home':
          zoom=11,
          pitch=50)))
          
-        layer = pdk.Layer(
-         "HexagonLayer",
-          HEXAGON_LAYER_DATA)
+       layer = pdk.Layer(
+        "HexagonLayer",
+         HEXAGON_LAYER_DATA)
        
   
 
