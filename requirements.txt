@@ -4,5 +4,4 @@ numpy==1.21.2
 requests==2.26.0
 yfinance==0.1.68
 fredapi==0.4.3
-pip install py3Dmol
-pip install stmol==0.0.7
+stmol==0.0.7
