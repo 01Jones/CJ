@@ -21,7 +21,7 @@ if option == 'Home':
     st.text(" ")
   
             
-   st.pydeck_chart
+    st.pydeck_chart
     
             
     st.text('Live Streams')
