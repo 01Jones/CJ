@@ -19,6 +19,8 @@ if option == 'Home':
     st.text(" < Navigation with left sidebar")
     st.text("Asset Valuations, Performance Visualization, Digital Asset Tracker, Page 4, Framework")
     st.text(" ")
+    st.text(" ")
+    st.text(" ")
   
     st.pydeck_chart(pdk.Deck(
          map_style='mapbox://styles/mapbox/dark-v8',
@@ -28,16 +30,7 @@ if option == 'Home':
          zoom=11,
          pitch=50)))
        
-            
- 
-            
-    st.text('Live Streams')
-    st.video("https://www.youtube.com/watch?v=JQnxefImhu8")
-    st.video("https://www.youtube.com/watch?v=JJqXeRFsLjE")
-    st.video("https://www.youtube.com/watch?v=OObOQ2GElhA")
-    st.video("https://www.youtube.com/watch?v=F109TZt3nRc")
-    st.video("https://www.youtube.com/watch?v=DY5RYp4sxYc")
-    
+  
 
 #pages
 
