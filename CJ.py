@@ -27,7 +27,7 @@ if option == 'Home':
              longitude=-122.4,
              zoom=11,
              pitch=50,
-         ),    
+         )    
  
             
     st.text('Live Streams')
