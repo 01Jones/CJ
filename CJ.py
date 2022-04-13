@@ -5,7 +5,7 @@ import requests
 import yfinance as yf
 import fredapi
 import datetime as dt
-import pydeck as pdk
+import pydeck as pd
 
 
 # Sidebar dropdown 
