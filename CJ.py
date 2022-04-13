@@ -6,10 +6,6 @@ import yfinance as yf
 import fredapi
 import datetime as dt
 
-import streamlit as st
-from stmol import showmol
-import py3Dmo
-
 
 
 # Sidebar dropdown 
