@@ -30,7 +30,7 @@ if option == 'Home':
         pickable=True,
         auto_highlight=True,
 )
-    
+    view_state = pdk.ViewState(latitude=37.7576171, longitude=-122.5776844, bearing=45, pitch=50, zoom=8,)
     
             
     st.text('Live Streams')
