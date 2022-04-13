@@ -21,7 +21,7 @@ if option == 'Home':
     st.text(" ")
   
     st.pydeck_chart(pdk.Deck(
-         map_style='mapbox://styles/mapbox/light-v8',
+         map_style='mapbox://styles/mapbox/dark-v8',
          initial_view_state=pdk.ViewState(
          latitude=41.87,
          longitude=-87.62,
