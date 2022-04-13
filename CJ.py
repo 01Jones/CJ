@@ -22,15 +22,17 @@ if option == 'Home':
   
             
     arc_layer = pdk.Layer(
-      "ArcLayer",
+     "ArcLayer",
+       data=df,
       get_width="S000 * 2",
       get_source_position=["lng_h", "lat_h"],
       get_target_position=["lng_w", "lat_w"],
       get_tilt=15,
       get_source_color=RED_RGB,
       get_target_color=GREEN_RGB,
-      pickable=True,
-      auto_highlight=True,
+        pickable=True,
+        auto_highlight=True,
+)
     
     
             
