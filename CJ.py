@@ -174,10 +174,22 @@ if option == 'Digital Assets' :
 
 if option == 'Page 4' :
     st.text("Data")
-from fredapi import Fred
-fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
+    
+    tickers = ('VTI', 'SPY', 'DIA', 'GME', 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD')
 
-data = fred.get_series('SP500')
+    dropdown = st.multiselect('assets', tickers)
 
-data = fred.get_series_latest_release('GDP')
-data.tail()
+    start = st.date_input('Start', value = pd.to_datetime('2020-01-01'))
+    end = st.date_input('End',value = pd.to_datetime('today'))
+
+    def relativeret(df):
+        rel = df.pct_change()
+        cumret = (1+rel).cumprod() - 1
+        cumret = cumret.fillna(0)
+        return cumret
+
+    if len(dropdown) > 0:
+     #df = yf.download(dropdown,start,end) ['Adj Close'] 
+        df = relativeret(yf.download(dropdown,start,end) ['Adj Close'])
+   
+        st.line_chart(df)
