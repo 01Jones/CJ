@@ -192,4 +192,4 @@ if option == 'Page 4' :
      #df = yf.download(dropdown,start,end) ['Adj Close'] 
         df = relativeret(yf.download(dropdown,start,end) ['Adj Close'])
    
-        st.bar_chart(df)
+        st.bokeh_chart(df)
