@@ -179,7 +179,7 @@ if option == 'Page 4' :
 
     dropdown = st.multiselect('assets', tickers)
 
-    start = st.date_input('Start', value = pd.to_datetime('2020-01-01'))
+    start = st.date_input('Start', value = pd.to_datetime('2021-01-01'))
     end = st.date_input('End',value = pd.to_datetime('today'))
 
     def relativeret(df):
