@@ -33,7 +33,7 @@ if option == 'Home':
     data = json.loads(response.text)
     col1, col2, col3 = st.columns(3)
     col1.metric("Temperature", "70 °F", "1.2 °F")
-    col2.metric(data)
+    col2.metric(data,"temp")
     col3.metric("Humidity", "86%", "4%")
  
     #map
