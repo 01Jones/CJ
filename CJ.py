@@ -26,7 +26,8 @@ if option == 'Home':
     #weather
     col1, col2, col3 = st.columns(3)
     col1.metric("Temperature", "70 °F", "1.2 °F")
-    col2.metric("Wind", "9 mph", "-8%")
+    col2.metric("https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={54c08ecafc87e0166d56037c1fdaa23a
+}")
     col3.metric("Humidity", "86%", "4%")
  
     #map
