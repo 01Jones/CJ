@@ -25,17 +25,15 @@ if option == 'Home':
     st.text(" ")
     
     #weather
-    api_key = "0123456789abcdef0123456789abcdef"
+    api_key = "54c08ecafc87e0166d56037c1fdaa23a"
     lat = "48.208176"
     lon = "16.373819"
     url = "https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&appid=%s&units=metric" % (lat, lon, api_key)
     response = requests.get(url)
     data = json.loads(response.text)
-    print(data)
     col1, col2, col3 = st.columns(3)
     col1.metric("Temperature", "70 °F", "1.2 °F")
-    col2.metric("https://api.openweathermap.org/data/2.5/onecall?lat=41.87&lon=-87.62&exclude=hourly,daily&appid={54c08ecafc87e0166d56037c1fdaa23a
-}")
+    col2.metric(data)
     col3.metric("Humidity", "86%", "4%")
  
     #map
