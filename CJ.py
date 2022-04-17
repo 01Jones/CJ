@@ -84,7 +84,7 @@ if option == 'Performance' :
      #df = yf.download(dropdown,start,end) ['Adj Close'] 
         df = relativeret(yf.download(dropdown,start,end) ['Adj Close'])
    
-        st.line_chart(df)
+        st.area_chart(df)
 
 
 
