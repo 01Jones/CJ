@@ -46,7 +46,7 @@ if option == 'Valuation':
     st.subheader("DCF")
     
 if option == 'Performance':
-    st.subheader("Economic KPI Analysis")
+    st.subheader("Asset Return Value")
 
 if option == 'Digital Assets':
     st.subheader("Digital Assets")
