@@ -33,11 +33,13 @@ if option == 'Home':
     data = json.loads(response.text)
     current = data["current"]["temp"]
     w = data["current"]["wind_speed"]
+    h = data["current"]["humidity"]
     
     col1, col2, col3 = st.columns(3)
     col1.metric("Temperature", current, "1.2 °F")
-    col2.metric("Wind", w, "-8%mph")
-    col3.metric("Humidity", "86%", "4%")
+    col2.metric("Wind", w, "mph")
+    col3.metric("Humidity", h, "4%")
+   
     
    
 
