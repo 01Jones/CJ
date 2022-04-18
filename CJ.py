@@ -32,6 +32,9 @@ if option == 'Home':
     response = requests.get(url)
     data = json.loads(response.text)
     current = data["current"]["temp"]
+    
+    col1, col2, col3 = st.columns(3)
+   
 
    
  
