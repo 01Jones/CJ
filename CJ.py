@@ -26,8 +26,8 @@ if option == 'Home':
     
     #weather
     api_key = "54c08ecafc87e0166d56037c1fdaa23a"
-    lat = "41.87"
-    lon = "-87.62"
+    lat = "41.8786"
+    lon = "-87.6251"
     url = "https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&appid=%s&units=imperial" % (lat, lon, api_key)
     response = requests.get(url)
     data = json.loads(response.text)
