@@ -33,9 +33,7 @@ if option == 'Home':
     data = json.loads(response.text)
     current = data["current"]["temp"]
 
-    col1.metric("Temperature", "70 °F", "1.2 °F")
-    col2.metric(current)
-    col3.metric("Humidity", "86%", "4%")
+   
  
     #map
     st.pydeck_chart(pdk.Deck(
