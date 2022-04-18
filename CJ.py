@@ -34,7 +34,7 @@ if option == 'Home':
     current = data["current"]["temp"]
     
     col1, col2, col3 = st.columns(3)
-    col1.title(current)
+    col1.header(current)
    
 
    
