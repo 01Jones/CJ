@@ -71,7 +71,10 @@ if option == 'Framework':
 
 #Page 2
 
-
+if option == 'Valuation':
+    st.text("Discounted Cash Flow Analysis')
+            
+    st.text_input("Net Income")
 
 
     
