@@ -92,7 +92,8 @@ if option == 'Performance' :
     
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
-    data = fred.get_series('SP500')
+    data = fred.get_series_latest_release('GDP')
+    data.tail()
     
     
         
