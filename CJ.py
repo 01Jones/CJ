@@ -89,8 +89,9 @@ if option == 'Performance' :
     st.text("Correlation")
     
     st.text_input("Ticker",)
-    data = fred.get_series_first_release('GDP')
+    data = fred.get_series_latest_release('GDP')
     data.tail()
+    
 
     
 
