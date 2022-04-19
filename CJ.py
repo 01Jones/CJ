@@ -87,7 +87,7 @@ if option == 'Valuation':
 if option == 'Performance' :
     st.text("Correlation")
     
-    st.text_input("Ticker")
+    st.text_input("Ticker","$SPY")
 
     
 
