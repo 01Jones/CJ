@@ -214,3 +214,4 @@ if option == 'Framework' :
      st.text("Data")
   
      st.echo():
+        st.write('blah blah')
