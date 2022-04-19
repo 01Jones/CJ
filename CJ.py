@@ -92,8 +92,7 @@ if option == 'Performance' :
     st.text_input("Ticker",)
     fred_api_key = '49dc69fb7e224d27e8cd2f5b4830ac9f'
     
-    gdp = fred.get_series("GDP")
-    gdp.tail()
+    https://api.stlouisfed.org/fred/series?series_id=GDP&api_key&file_type=json
     
 
     
