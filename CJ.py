@@ -206,3 +206,11 @@ if option == 'Page 4' :
         df = relativeret(yf.download(dropdown,start,end) ['Adj Close'])
    
         st.area_chart(df)
+    
+    
+    #Framework Page
+    
+   if option == 'Framework' :
+     st.text("Data")
+  
+     with st.echo():
