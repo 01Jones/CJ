@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib as mpl
 import requests
 import json
+import pandas_datareader as pdr
 import yfinance as yf
 import fredapi
 from fredapi import fred
