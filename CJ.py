@@ -213,4 +213,4 @@ if option == 'Page 4' :
 if option == 'Framework' :
      st.text("Data")
   
-     with st.echo():
+     st.echo():
