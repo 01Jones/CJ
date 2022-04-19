@@ -93,7 +93,7 @@ if option == 'Performance' :
     fred_api_key = '49dc69fb7e224d27e8cd2f5b4830ac9f'
     
     data = fred.get_series_latest_release('GDP')
-    data.tail()
+    st.line_chart(data)
     
 
     
