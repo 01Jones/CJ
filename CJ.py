@@ -6,7 +6,6 @@ import requests
 import json
 import yfinance as yf
 import fredapi
-from fredapi import fred
 import datetime as dt
 import pydeck as pdk
 
@@ -90,9 +89,14 @@ if option == 'Performance' :
     st.text("Correlation")
     
     st.text_input("Ticker",)
-    fred_api_key = '49dc69fb7e224d27e8cd2f5b4830ac9f'
+    
+    from fredapi import Fred
+    fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
+    data = fred.get_series('SP500')
     
     https://api.stlouisfed.org/fred/series?series_id=GDP&api_key&file_type=json
+        
+     
     
 
     
