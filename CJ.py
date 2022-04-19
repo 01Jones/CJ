@@ -210,7 +210,7 @@ if option == 'Page 4' :
     
     #Framework Page
     
- if option == 'Framework' :
+if option == 'Framework' :
      st.text("Data")
   
      with st.echo():
