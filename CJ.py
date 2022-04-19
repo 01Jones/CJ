@@ -87,9 +87,7 @@ if option == 'Valuation':
 if option == 'Performance' :
     st.text("Correlation")
     
-    tickers = ('VTI', 'SPY', 'DIA', 'IEF', 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD')
-
-    dropdown = st.multiselect('assets', tickers)
+    st.text_input("Ticker")
 
     start = st.date_input('Start', value = pd.to_datetime('2020-01-01'))
     end = st.date_input('End',value = pd.to_datetime('today'))
