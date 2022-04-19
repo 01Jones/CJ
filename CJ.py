@@ -6,6 +6,7 @@ import requests
 import json
 import yfinance as yf
 import fredapi
+from fredapi import fred
 import datetime as dt
 import pydeck as pdk
 
