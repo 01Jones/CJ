@@ -213,5 +213,5 @@ if option == 'Page 4' :
 if option == 'Framework' :
      st.text("Data")
   
-     st.echo():
-        st.write('blah blah')
+     st.echo(sode_loction="above")
+        
