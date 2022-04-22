@@ -41,10 +41,6 @@ if option == 'Home':
     col2.metric("Wind", w, "mph")
     col3.metric("Humidity", h, "4%")
    
-    
-   
-
-   
  
     #map
     st.pydeck_chart(pdk.Deck(
@@ -72,6 +68,11 @@ if option == 'Framework':
     st.subheader("Framework")
 
 
+    
+    
+    
+    
+    
 
 #Page 2
 
@@ -80,7 +81,6 @@ if option == 'Valuation':
             
     st.text_input("Net Income", "000,000")
     
-
 
     
 
@@ -94,6 +94,12 @@ if option == 'Performance' :
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     gdp = fred.get_series_latest_release('GDP')
     st.write(gdp.tail())
+    
+    
+    
+    plt.xlabel('Date')
+    plt.ylabel('GDP')
+    plt.title('Google Closing Price' )
     
     
         
