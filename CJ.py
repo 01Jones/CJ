@@ -95,11 +95,14 @@ if option == 'Performance' :
     gdp = fred.get_series_latest_release('GDP')
     st.write(gdp.tail())
     
+    fig = plt.figure()
+    ax = fig.add_axes([0, 0, 1, 1])
+    
+    ax.set_xlabel('Date') 
+    ax.set_ylabel('Close')
+    ax.set_title('Google Closing Price')
     
     
-    plt.xlabel('Date')
-    plt.ylabel('GDP')
-    plt.title('Google Closing Price' )
     
     
         
