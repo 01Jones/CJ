@@ -93,14 +93,9 @@ if option == 'Performance' :
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     gdp = fred.get_series_latest_release('GDP')
-    st.write(gdp.tail())
+    st.write(gdp)
     
-    fig = plt.figure()
-    ax = fig.add_axes([0, 0, 1, 1])
     
-    ax.set_xlabel('Date') 
-    ax.set_ylabel('Close')
-    ax.set_title('Google Closing Price')
     
     
     
