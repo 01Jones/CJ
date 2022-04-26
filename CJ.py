@@ -112,7 +112,7 @@ if option == 'Performance' :
     st.write(will)
      
     
-    st.area_chart(gdp, will)
+    st.area_chart(gdp,will)
     st.line_chart(gdp)
     st.line_chart(will)
     
