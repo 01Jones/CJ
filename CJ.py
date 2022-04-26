@@ -99,12 +99,14 @@ if option == 'Valuation Models':
 
 #Page 3
 if option == 'Performance' :
-    st.text("Correlation")
+    st.text("Federal Reserve Economic Data")
     
     st.text_input("FRED Series", 'GDP')
     
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
+    
+    
    
     
     will = fred.get_series_as_of_date('WILL5000INDFC', 'today')
