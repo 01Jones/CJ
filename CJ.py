@@ -108,13 +108,11 @@ if option == 'Performance' :
    
     
     will = fred.get_series_as_of_date('WILL5000INDFC', 'today')
-    will.name = 'will'
-    
+   
     cur = fred.get_series_as_of_date('WCURCIR', 'today')
-    cur.name = 'cur'
     
     gdp = fred.get_series_as_of_date('GDP', 'today')
-    st.write(gdp)
+    
     
     st.write(gdp)
     st.write(will)
@@ -122,8 +120,7 @@ if option == 'Performance' :
      
     
     st.area_chart(cur)
-    st.line_chart(gdp)
-    st.line_chart(will)
+
     
     
     
