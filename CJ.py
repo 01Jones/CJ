@@ -114,15 +114,14 @@ if option == 'Performance' :
     cur = fred.get_series_latest_release('WCURCIR')
     cur.name = 'cur'
     
-    df = pd.merge(will, cur)
-    df
+    
     
     st.write(gdp)
     st.write(will)
     st.write(cur)
      
     
-    st.area_chart(will)
+    st.area_chart(cur)
     st.line_chart(gdp)
     st.line_chart(will)
     
