@@ -79,9 +79,9 @@ if option == 'Framework':
 if option == 'Valuation':
     st.text("Discounted Cash Flow Analysis")
             
-    st.number_input("1st Year")
-    st.number_input("2nd Year")
-    st.number_input("3rd Year")
+    st.number_input("1st Year", 100,000)
+    st.number_input("2nd Year", 100,000)
+    st.number_input("3rd Year", 100,000)
                     
            
     
