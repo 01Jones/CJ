@@ -119,7 +119,7 @@ if option == 'Performance' :
     st.write(cur)
      
     
-    st.area_chart(cur)
+    st.area_chart(gdp)
 
     
     
