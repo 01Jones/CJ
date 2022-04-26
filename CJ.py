@@ -114,7 +114,8 @@ if option == 'Performance' :
     cur = fred.get_series_latest_release('WCURCIR')
     cur.name = 'cur'
     
-    
+    a = fred.get_series_as_of_date('GDP', 'today')
+    st.write(a)
     
     st.write(gdp)
     st.write(will)
