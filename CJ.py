@@ -118,10 +118,10 @@ if option == 'Performance' :
     st.write(will)
     st.write(cur)
      
-    
-    st.area_chart(gdp)
+  
     
     fig, ax = plt.subplots()
+    plt.title("Simple Plot")
 
     
     
