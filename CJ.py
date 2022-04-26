@@ -114,8 +114,8 @@ if option == 'Performance' :
     cur = fred.get_series_latest_release('WCURCIR')
     cur.name = 'cur'
     
-    df = pd.merge(will, cur, left_index=true, right_index=true)
-    st.write(df)
+    df = pd.merge(will, cur)
+    df
     
     st.write(gdp)
     st.write(will)
