@@ -20,6 +20,8 @@ if option == 'Home':
     st.header("Project")
     st.text(" ")
     st.text(" < Navigation with left sidebar")
+    st.text(" Framework & Code on Page 6")
+    st.text(" ")
     st.text("Asset Valuations, Performance Visualization, Digital Asset Tracker, Page 4, Framework")
     st.text(" ")
     st.text(" ")
