@@ -82,7 +82,7 @@ if option == 'Valuation':
     st.number_input("1st Year", 100,000)
     st.number_input("2nd Year", 100,000)
     st.number_input("3rd Year", 100,000)
-    st.print("1st Year")
+    st.write("1st Year")
     
                     
            
