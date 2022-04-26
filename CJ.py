@@ -121,8 +121,7 @@ if option == 'Performance' :
   
     
     gdp_data = pd.DataFrame(
-        [[gdp]]
-        columns = [realtime_start, date, value])
+        [[gdp]] columns = [realtime_start, date, value])
         
 
     
