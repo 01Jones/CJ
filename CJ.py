@@ -109,10 +109,10 @@ if option == 'Performance' :
     gdp = fred.get_series_latest_release('GDP')
     
     will = fred.get_series_latest_release('WILL5000INDFC')
-    will.name = will
+    will.name = 'will'
     
     cur = fred.get_series_latest_release('WCURCIR')
-    cur.name = cur
+    cur.name = 'cur'
     
     df = pd.merge(will, cur, left_index=true, right_index=true)
     st.write(df)
