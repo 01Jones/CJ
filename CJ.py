@@ -123,7 +123,7 @@ if option == 'Performance' :
   
     
     pd.DataFrame(gdp)
-    df.rename(columns={"Date", "X", "Value"})
+    gdp.rename(columns={"Date", "X", "Value"})
     
     st.write(gdp)
         
