@@ -12,7 +12,7 @@ import pydeck as pdk
 #Home Page
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation', 'Performance', 'Digital Assets', 'Page 4', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'Digital Assets', 'Page 4', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
