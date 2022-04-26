@@ -58,7 +58,7 @@ if option == 'Home':
 #pages
 
 if option == 'Valuation Models':
-    st.subheader("DCF")
+    st.subheader("Valuation Models")
     
 if option == 'Performance':
     st.subheader("Asset Return Value")
@@ -79,8 +79,8 @@ if option == 'Framework':
 #Page 2
 
 if option == 'Valuation Models':
-    st.header("Discounted Cash Flow Analysis")
-            
+    
+    st.header("Discounted Cash Flow Analysis")       
     st.number_input("1st Year", 0,999999999)
     st.number_input("2nd Year", 0,999999999)
     st.number_input("3rd Year", 0,999999999)
