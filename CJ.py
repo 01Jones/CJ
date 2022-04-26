@@ -1,6 +1,6 @@
 import streamlit as st
-import pandas as pd
 import numpy as np
+import pandas as pd
 import matplotlib as plt
 import requests
 import json
@@ -120,8 +120,7 @@ if option == 'Performance' :
      
   
     
-    fig, ax = plt.subplots()
-    plt.title("Simple Plot")
+    gdp = pd.DataFrame(data = gdp, index = realtime_start)
 
     
     
