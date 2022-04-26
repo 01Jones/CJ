@@ -120,7 +120,10 @@ if option == 'Performance' :
      
   
     
-    gdp = pd.DataFrame(data = gdp, index = realtime_start)
+    gdp_data = pd.DataFrame(
+        [[gdp]]
+        columns = [realtime_start, date, value])
+        
 
     
     
