@@ -89,7 +89,7 @@ if option == 'Valuation Models':
     st.number_input("4th Year", 0,999999999)
     st.number_input("5th Year", 0,999999999)
     
-    print(year1)
+    st.write(year1)
     
                     
            
