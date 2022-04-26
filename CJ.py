@@ -101,6 +101,11 @@ if option == 'Performance' :
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     gdp = fred.get_series_latest_release('GDP')
     st.write(gdp)
+    pd.Series(data = gdp, index = label_date)
+    
+    
+    
+    
     st.line_chart(gdp)
     
     
