@@ -22,7 +22,7 @@ if option == 'Home':
     st.text(" < Navigation with left sidebar, Framework & Source Code on Last Page")
     st.text(" ")
     st.text(" ")
-    st.text("Asset Valuations, Performance Visualization, Digital Asset Tracker, Page 4, Framework")
+    st.text("Asset Valuations, Performance Visualization Models, Digital Asset Tracker, Page 4, Framework")
     st.text(" ")
     st.text(" ")
     st.text(" ")
@@ -57,7 +57,7 @@ if option == 'Home':
 
 #pages
 
-if option == 'Valuation':
+if option == 'Valuation Models':
     st.subheader("DCF")
     
 if option == 'Performance':
@@ -78,8 +78,8 @@ if option == 'Framework':
 
 #Page 2
 
-if option == 'Valuation':
-    st.text("Discounted Cash Flow Analysis")
+if option == 'Valuation Models':
+    st.header("Discounted Cash Flow Analysis")
             
     st.number_input("1st Year", 0,999999999)
     st.number_input("2nd Year", 0,999999999)
