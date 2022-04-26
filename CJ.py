@@ -109,7 +109,8 @@ if option == 'Performance' :
     
     
     
-    st.line_chart(gdp, will)
+    st.line_chart(gdp)
+    st.line_chart(will)
     
     
     
