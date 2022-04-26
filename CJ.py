@@ -80,7 +80,7 @@ if option == 'Framework':
 
 if option == 'Valuation Models':
     
-    st.subheader("Discounted Cash Flow Analysis")
+    st.title("Discounted Cash Flow Analysis")
     st.text("Projcted Returns")
     st.number_input("1st Year", 0,999999999)
     st.number_input("2nd Year", 0,999999999)
