@@ -120,6 +120,8 @@ if option == 'Performance' :
      
     
     st.area_chart(gdp)
+    
+    fig, ax = plt.subplots()
 
     
     
