@@ -83,6 +83,7 @@ if option == 'Valuation':
     st.number_input("2nd Year", 0,999999)
     st.number_input("3rd Year", 0,999999)
     st.write("1st Year")
+    element = st.empty()
     
                     
            
