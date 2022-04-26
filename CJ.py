@@ -84,12 +84,12 @@ if option == 'Valuation Models':
     st.text(" ")
     st.text("Projcted Returns")
     year1 = st.number_input("1st Year", 0,999999999)
-    st.number_input("2nd Year", 0,999999999)
+    year2 = st.number_input("2nd Year", 0,999999999)
     st.number_input("3rd Year", 0,999999999)
     st.number_input("4th Year", 0,999999999)
     st.number_input("5th Year", 0,999999999)
     
-    st.write(year1)
+    st.write(year1 + year2)
     
                     
            
