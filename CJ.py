@@ -105,8 +105,8 @@ if option == 'Performance' :
     
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
-    gdp = fred.get_series_latest_release('GDP', '01-01-2015)
-    will = fred.get_series_as_of_date('WILL5000INDFC', '01-01-2015')
+    gdp = fred.get_series_latest_release('GDP', '2015-01-01')
+    will = fred.get_series_as_of_date('WILL5000INDFC', '2015-01-01')
     
     st.write(gdp)
     st.write(will)
