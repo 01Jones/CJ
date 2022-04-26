@@ -79,11 +79,11 @@ if option == 'Framework':
 if option == 'Valuation':
     st.text("Discounted Cash Flow Analysis")
             
-    st.number_input("1st Year", 0,999999)
-    st.number_input("2nd Year", 0,999999)
-    st.number_input("3rd Year", 0,999999)
-    st.write("1st Year")
-    element = st.empty()
+    st.number_input("1st Year", 0,999999999)
+    st.number_input("2nd Year", 0,999999999)
+    st.number_input("3rd Year", 0,999999999)
+    st.number_input("4th Year", 0,999999999)
+    
     
                     
            
