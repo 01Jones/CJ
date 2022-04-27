@@ -115,9 +115,6 @@ if option == 'Performance' :
     
     
     
-    sp.tail()
-    
-    
     
     st.write(gdp)
     st.write(will)
