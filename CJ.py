@@ -106,6 +106,8 @@ if option == 'Performance' :
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     
+    cap = fred.get_series('DDDM01USA156NWDB', observation_start='2014-01-01', observation_end='today')
+    st.area_chart(cap)
     
     snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
     will = fred.get_series('WILL5000INDFC', observation_start='2014-01-01', observation_end='today')
