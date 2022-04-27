@@ -107,13 +107,16 @@ if option == 'Performance' :
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     
     
+    snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
+    will = fred.get_series('WILL5000INDFC', observation_start='2014-01-01', observation_end='today')
    
+    cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
+    gdp = fred.get_series('GDP', observation_start='2014-01-01', observation_end='today')
     
-    will = fred.get_series_as_of_date('WILL5000INDFC', 'today')
-   
-    cur = fred.get_series_as_of_date('WCURCIR', 'today')
     
-    gdp = fred.get_series_as_of_date('GDP', 'today')
+    
+    sp.tail()
+    
     
     
     st.write(gdp)
