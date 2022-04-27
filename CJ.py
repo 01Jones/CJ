@@ -119,13 +119,8 @@ if option == 'Performance' :
     st.write(gdp)
     st.write(will)
     st.write(cur)
-     
-  
     
-    pd.DataFrame(gdp)
-    gdp.rename(columns={"Date", "Time", "Value"})
-    
-    st.write(gdp)
+    st.write(snp)
         
 
     
