@@ -118,6 +118,7 @@ if option == 'Performance' :
    
     cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
     gdp = fred.get_series('GDP', observation_start='2014-01-01', observation_end='today')
+    st.line_chart(gdp)
     
     
     
