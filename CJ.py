@@ -110,6 +110,9 @@ if option == 'Performance' :
     M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
     st.area_chart(M1)
     
+    pce = fred.get_series('PCE', observation_start='2014-01-01', observation_end='today')
+    st.area_chart(M1)
+    
     snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
     will = fred.get_series('WILL5000INDFC', observation_start='2014-01-01', observation_end='today')
    
