@@ -8,7 +8,7 @@ import yfinance as yf
 import fredapi
 import datetime as dt
 import pydeck as pdk
-import statsmodels as sm
+import statsmodels.api as sm
 
 #Home Page
 
