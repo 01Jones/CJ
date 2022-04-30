@@ -116,7 +116,7 @@ if option == 'Performance' :
     snp.columns = ['S&P 500']
 
 
-snp.plot(title='S&P 500 Price')
+    snp.plot(title='S&P 500 Price')
     
     
     
