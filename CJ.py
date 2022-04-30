@@ -131,8 +131,7 @@ if option == 'Performance' :
     cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
    
     
-    M1=pd.DataFrame(M1)
-    df.insert(
+    
     
     st.write(gdp)
     st.write(will)
