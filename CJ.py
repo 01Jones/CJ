@@ -107,21 +107,32 @@ if option == 'Performance' :
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     
+    gdp = fred.get_series('GDP', observation_start='2014-01-01', observation_end='today')
+    gdp = pd.DataFrame(gdp)
+    gdp.columns = ['GDP']
+
+    snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
+    snp = pd.DataFrame(snp)
+    snp.columns = ['S&P 500']
+
+
+snp.plot(title='S&P 500 Price')
+    
+    
+    
     M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
     st.area_chart(M1)
     
     pce = fred.get_series('PCE', observation_start='2014-01-01', observation_end='today')
-    st.area_chart(M1)
+    st.area_chart(pce)
     
-    snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
     will = fred.get_series('WILL5000INDFC', observation_start='2014-01-01', observation_end='today')
    
     cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
-    gdp = fred.get_series('GDP', observation_start='2014-01-01', observation_end='today')
-    st.line_chart(gdp)
+   
     
-    
-    
+    M1=pd.DataFrame(M1)
+    df.insert(
     
     st.write(gdp)
     st.write(will)
