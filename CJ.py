@@ -116,9 +116,9 @@ if option == 'Performance' :
     
     snp_data = pd.DataFrame(
         snp), columns=['Date', 'Value']
-       title="S&P 500 EMA",
-        x="Date",
-        y="Value",
+    title="S&P 500 EMA",
+    x="Date",
+    y="Value",
       
     st.line_chart(snp_data)
     
