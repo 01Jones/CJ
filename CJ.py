@@ -115,7 +115,7 @@ if option == 'Performance' :
     pd.DataFrame(snp)
     
     snp_data = pd.DataFrame(
-        snp), columns=['Date', 'Value']
+        (snp), columns=['Date', 'Value']
         title="S&P 500 EMA",
         x="Date",
         y="Value")
