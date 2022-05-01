@@ -119,7 +119,7 @@ if option == 'Performance' :
         title="S&P 500 EMA",
         x="Date'
         y="Value"
-    st.line_chart(snp_data)
+        st.line_chart(snp_data)
     
     
     
