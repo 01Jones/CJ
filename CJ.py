@@ -112,11 +112,14 @@ if option == 'Performance' :
     gdp.columns = ['GDP']
 
     snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
-    snp = pd.DataFrame(snp)
-    snp.columns = ['S&P 500']
-
-
-    snp.plot(title='S&P 500 Price')
+    pd.DataFrame(snp)
+    
+    snp_data = pd.DataFrame(
+        snp), columns=['Date', 'Value']
+        title="S&P 500 EMA",
+        x="Date'
+        y="Value"
+    st.line_chart(snp_data)
     
     
     
