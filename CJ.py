@@ -125,7 +125,7 @@ if option == 'Performance' :
     tyld = fred.get_series('T10Y2Y', observation_start=start, observation_end='today')
     st.line_chart(tyld)
     
-    twoyld = fred.get_series('TGS2', observation_start=start, observation_end='today')
+    twoyld = fred.get_series('TGS2', observation_start='2014-01-01', observation_end='today')
     st.linechart(twoyld)
     
     
