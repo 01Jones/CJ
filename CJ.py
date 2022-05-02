@@ -113,10 +113,11 @@ if option == 'Performance' :
 
     snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
     pd.DataFrame(snp)
+    st.line_chart(snp)
     
     
     yld = fred.get_series('T10Y2Y', observation_start='2014-01-01', observation_end='today')
-    st.line_chart(yld,snp)
+    st.line_chart(yld)
     
     M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
     st.area_chart(M1)
