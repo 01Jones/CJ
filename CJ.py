@@ -116,7 +116,7 @@ if option == 'Performance' :
     gdp = pd.DataFrame(gdp)
     gdp.columns = ['GDP']
 
-    snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
+    snp = fred.get_series('SP500', observation_start= start, observation_end='today')
     pd.DataFrame(snp)
     st.line_chart(snp)
     
