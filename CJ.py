@@ -103,14 +103,14 @@ if option == 'Performance' :
     st.subheader("Federal Reserve Economic Data")
     
     st.text('M1 Money Supply To Total Public Debt')
-    
-    
+  
   
     start = st.date_input('Start', value = pd.to_datetime('2019-01-01'))
     end = st.date_input('End',value = pd.to_datetime('today'))
     
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
+    
     
     gdp = fred.get_series('GDP', observation_start='2014-01-01', observation_end='today')
     gdp = pd.DataFrame(gdp)
@@ -120,9 +120,15 @@ if option == 'Performance' :
     pd.DataFrame(snp)
     st.line_chart(snp)
     
+    #Bonds
     
-    yld = fred.get_series('T10Y2Y', observation_start='2014-01-01', observation_end='today')
-    st.line_chart(yld)
+    tyld = fred.get_series('T10Y2Y', observation_start=start, observation_end='today')
+    st.line_chart(tyld)
+    
+    twoyld = fred.get_series('TGS2', observation_start=start, observation_end='today')
+    st.linechart(twoyld)
+    
+    
     
     M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
     st.area_chart(M1)
