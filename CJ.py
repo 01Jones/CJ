@@ -123,10 +123,11 @@ if option == 'Performance' :
     #Bonds
     
     tyld = fred.get_series('T10Y2Y', observation_start=start, observation_end='today')
+    pd.Data_Frame(tyld)
     st.line_chart(tyld)
     
     twoyld = fred.get_series('DGS2', observation_start=start, observation_end='today')
-    st.linechart(twoyld)
+    
     
     
     
