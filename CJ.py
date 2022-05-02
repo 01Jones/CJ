@@ -104,6 +104,12 @@ if option == 'Performance' :
     
     st.text('M1 Money Supply To Total Public Debt')
     
+    
+    dropdown = st.multiselect('assets', tickers)
+
+    start = st.date_input('Start', value = pd.to_datetime('2019-01-01'))
+    end = st.date_input('End',value = pd.to_datetime('today'))
+    
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     
