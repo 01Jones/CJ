@@ -62,7 +62,7 @@ if option == 'Valuation Models':
     st.subheader("Valuation Models")
     
 if option == 'Performance':
-    st.subheader("Economic Indicator Correlation")
+    st.subheader("Economic Indicator Correlation Matrix")
 
 if option == 'Digital Assets':
     st.subheader("Digital Assets")
