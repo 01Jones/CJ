@@ -62,7 +62,7 @@ if option == 'Valuation Models':
     st.subheader("Valuation Models")
     
 if option == 'Performance':
-    st.subheader("Asset Return Value")
+    st.subheader("Economic Indicator Correlation")
 
 if option == 'Digital Assets':
     st.subheader("Digital Assets")
@@ -100,7 +100,7 @@ if option == 'Valuation Models':
 
 #Page 3
 if option == 'Performance' :
-    st.text("Federal Reserve Economic Data")
+    st.subheader("Federal Reserve Economic Data")
     
     st.text('M1 Money Supply To Total Public Debt')
     
