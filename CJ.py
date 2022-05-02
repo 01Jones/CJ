@@ -105,7 +105,7 @@ if option == 'Performance' :
     st.text('M1 Money Supply To Total Public Debt')
     
     
-    fredinput = st.text_input('Fred #', "snp")
+  
     start = st.date_input('Start', value = pd.to_datetime('2019-01-01'))
     end = st.date_input('End',value = pd.to_datetime('today'))
     
