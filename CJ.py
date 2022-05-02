@@ -122,7 +122,8 @@ if option == 'Performance' :
       
     st.line_chart(snp_data)
     
-    
+    yld = fred.get_series('T10Y2Y', observation_start='2014-01-01', observation_end='today')
+    st.line_chart(yld)
     
     M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
     st.area_chart(M1)
@@ -130,7 +131,6 @@ if option == 'Performance' :
     pce = fred.get_series('PCE', observation_start='2014-01-01', observation_end='today')
     st.area_chart(pce)
     
-    will = fred.get_series('WILL5000INDFC', observation_start='2014-01-01', observation_end='today')
    
     cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
    
