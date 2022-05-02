@@ -116,7 +116,7 @@ if option == 'Performance' :
     
     
     yld = fred.get_series('T10Y2Y', observation_start='2014-01-01', observation_end='today')
-    st.line_chart(yld)
+    st.line_chart(yld,snp)
     
     M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
     st.area_chart(M1)
