@@ -114,10 +114,6 @@ if option == 'Performance' :
     snp = fred.get_series('SP500', observation_start='2014-01-01', observation_end='today')
     pd.DataFrame(snp)
     
-    snp_data = pd.DataFrame(
-        (snp), columns=['Date', 'Value']
-      
-    st.line_chart(snp_data)
     
     yld = fred.get_series('T10Y2Y', observation_start='2014-01-01', observation_end='today')
     st.line_chart(yld)
