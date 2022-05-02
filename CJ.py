@@ -116,8 +116,6 @@ if option == 'Performance' :
     
     snp_data = pd.DataFrame(
         (snp), columns=['Date', 'Value']
-        x="Date",
-        y="Value")
       
     st.line_chart(snp_data)
     
