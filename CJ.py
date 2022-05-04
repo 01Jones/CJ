@@ -111,8 +111,8 @@ if option == 'Performance' :
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
    
-    start = '2014-01-01'
-    end = 'today'
+    start = datetime.datetime(2010, 1, 1)
+    end = datetime.datetime('today')
     
     gdp = web.DataReader('GDP', 'fred', start, end)
 
