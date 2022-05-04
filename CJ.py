@@ -128,10 +128,10 @@ if option == 'Performance' :
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
 
     #sp.plot(label = 'S&P 500', figsize = (15,7))
-    two.plot(label = 'Two Year Tresury', figsize = (15,7))
+    two.st.plot(label = 'Two Year Tresury', figsize = (15,7))
     ten.plot(label = 'Ten Year Tresury', figsize = (15,7))
     
-    st.pyplot(two)
+    
     
     
     
