@@ -131,6 +131,7 @@ if option == 'Performance' :
     two.plot(label = 'Two Year Tresury', figsize = (15,7))
     ten.plot(label = 'Ten Year Tresury', figsize = (15,7))
     
+    st.pyplot(two)
     
     
     
