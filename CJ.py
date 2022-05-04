@@ -129,7 +129,7 @@ if option == 'Performance' :
 
     #sp.plot(label = 'S&P 500', figsize = (15,7))
     t = two.plot(label = 'Two Year Tresury', figsize = (15,7))
-    10 =ten.plot(label = 'Ten Year Tresury', figsize = (15,7))
+    tn =ten.plot(label = 'Ten Year Tresury', figsize = (15,7))
     
     st.pyplot(t)
     
