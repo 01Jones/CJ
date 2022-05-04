@@ -147,9 +147,7 @@ if option == 'Performance' :
     
     
     st.write(gdp)
-    st.write(will)
     st.write(cur)
-    
     st.write(snp)
         
 
