@@ -105,8 +105,8 @@ if option == 'Performance' :
     st.text('M1 Money Supply To Total Public Debt')
   
   
-    start = st.date_input('Start', value = pd.to_datetime('2019-01-01'))
-    end = st.date_input('End',value = pd.to_datetime('today'))
+    start = '2014-01-01'
+    end = 'today'
     
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
@@ -122,11 +122,14 @@ if option == 'Performance' :
     
     #Bonds
     
-    tyld = fred.get_series('T10Y2Y', observation_start=start, observation_end='today')
-    pd.Data_Frame(tyld)
-    st.line_chart(tyld)
     
-    twoyld = fred.get_series('DGS2', observation_start=start, observation_end='today')
+    sp = fred.get_series('SP500', observation_start=start, observation_end=end)
+    two = fred.get_series('DGS2', observation_start=start, observation_end=end)
+    ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
+
+    #sp.plot(label = 'S&P 500', figsize = (15,7))
+    two.plot(label = 'Two Year Tresury', figsize = (15,7))
+    ten.plot(label = 'Ten Year Tresury', figsize = (15,7))
     
     
     
