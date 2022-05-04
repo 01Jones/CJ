@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import pandas_datareader.data as web
 import matplotlib.pyplot as plt
 import requests
 import json
@@ -105,16 +106,15 @@ if option == 'Performance' :
     st.text('M1 Money Supply To Total Public Debt')
   
   
-    start = '2014-01-01'
-    end = 'today'
+    
     
     from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
+   
+    start = '2014-01-01'
+    end = 'today'
     
-    
-    gdp = fred.get_series('GDP', observation_start='2014-01-01', observation_end='today')
-    gdp = pd.DataFrame(gdp)
-    gdp.columns = ['GDP']
+    gdp = web.DataReader('GDP', 'fred', start, end)
 
     snp = fred.get_series('SP500', observation_start=start, observation_end='today')
     pd.DataFrame(snp)
@@ -123,15 +123,11 @@ if option == 'Performance' :
     #Bonds
     
     
-    sp = fred.get_series('SP500', observation_start=start, observation_end=end)
-    two = fred.get_series('DGS2', observation_start=start, observation_end=end)
-    ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
+    bonds = web.DataReader('DGS2', 'T10Y2Y', start, end)
+    st.write(bonds)
 
-    #sp.plot(label = 'S&P 500', figsize = (15,7))
-    t = two.plot(label = 'Two Year Tresury', figsize = (15,7))
-    tn =ten.plot(label = 'Ten Year Tresury', figsize = (15,7))
     
-    st.pyplot(t)
+    
     
     
     
