@@ -103,9 +103,7 @@ if option == 'Valuation Models':
 if option == 'Performance' :
     st.subheader("Federal Reserve Economic Data")
     
-    st.text('M1 Money Supply To Total Public Debt')
-  
-  
+    st.text('M1 Money Supply To Total Public Debt'
     
     
     from fredapi import Fred
@@ -113,6 +111,20 @@ if option == 'Performance' :
    
     start = ('2010-01-01')
     end = ('today')
+            
+    two = fred.get_series('DGS2', observation_start=start, observation_end=end)
+    ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
+
+
+    two.plot(figsize=(10,5))
+    ten.plot(figsize=(10,5))
+    plt.title('Treasury Yields')
+    plt.legend('Two', 'Ten')        
+            
+            
+            
+            
+            
     
     gdp = web.DataReader('GDP', 'fred', start, end)
 
@@ -281,5 +293,5 @@ if option == 'Page 4' :
 if option == 'Framework' :
      st.text("Data")
   
-     st.echo(code_loction=above)
+     st.echo():above
         
