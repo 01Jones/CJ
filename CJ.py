@@ -124,7 +124,7 @@ if option == 'Performance' :
             
             
     
-    gdp = web.DataReader('GDP', 'fred', start, end)
+    gdp = web.DataReader('A191RL1Q225SBEA', 'fred', start, end)
 
     snp = fred.get_series('SP500', observation_start=start, observation_end='today')
     pd.DataFrame(snp)
