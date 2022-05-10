@@ -11,8 +11,6 @@ import datetime as dt
 import pydeck as pdk
 import statsmodels.api as sm
 
-
-
 #Home Page
 
 # Sidebar dropdown 
@@ -104,14 +102,60 @@ if option == 'Valuation Models':
 #Page 3
 if option == 'Performance' :
     st.subheader("Federal Reserve Economic Data")
-    st.text('M1 Money Supply To Total Public Debt'
     
+    st.text('M1 Money Supply To Total Public Debt')
+  
+  
+    
+    
+    from fredapi import Fred
+    fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
+   
+    start = ('2010-01-01')
+    end = ('today')
+    
+    gdp = web.DataReader('GDP', 'fred', start, end)
 
-            
-            
-            
-            
-            
+    snp = fred.get_series('SP500', observation_start=start, observation_end='today')
+    pd.DataFrame(snp)
+    st.line_chart(snp)
+    
+    #Bonds
+    
+    
+    bonds = web.DataReader('DGS2', 'T10Y2Y', start, end)
+    st.write(bonds)
+
+    
+    
+    
+    
+    
+    
+    M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
+    st.area_chart(M1)
+    
+    pce = fred.get_series('PCE', observation_start='2014-01-01', observation_end='today')
+    st.area_chart(pce)
+    
+   
+    cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
+   
+    
+    
+    
+    st.write(gdp)
+    st.write(cur)
+    st.write(snp)
+        
+
+    
+    
+    
+    
+    
+        
+     
     
 
     
@@ -237,5 +281,5 @@ if option == 'Page 4' :
 if option == 'Framework' :
      st.text("Data")
   
-     st.echo():above
+     st.echo(sode_loction=above)
         
