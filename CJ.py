@@ -113,14 +113,12 @@ if option == 'Performance' :
    
     start = ('2010-01-01')
     end = ('today')
-    
-    gdp = web.DataReader('GDP', 'fred', start, end)
 
-    snp = fred.get_series('SP500', observation_start=start, observation_end='today')
-    pd.DataFrame(snp)
-    st.line_chart(snp)
-    
-    #Bonds
+
+    two = fred.get_series('DGS2', observation_start=start, observation_end=end)
+    ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
+    st.pyplot(fig=two)
+
     
     
     bonds = web.DataReader('DGS2', 'T10Y2Y', start, end)
