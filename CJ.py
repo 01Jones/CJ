@@ -108,8 +108,8 @@ if option == 'Performance' :
     
     #from fredapi import Fred
     #fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
-    start = '2014-01-01'
-    end = 'today'
+    #start = '2014-01-01'
+    #end = 'today'
 
     two = fred.get_series('DGS2', observation_start=start, observation_end=end)
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
