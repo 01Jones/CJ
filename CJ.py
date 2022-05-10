@@ -107,8 +107,7 @@ if option == 'Performance' :
     st.text('M1 Money Supply To Total Public Debt'
     
     
-
-    fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
+fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     start = '2014-01-01'
     end = 'today'
 
