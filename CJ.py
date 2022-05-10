@@ -106,7 +106,7 @@ if option == 'Performance' :
     st.subheader("Federal Reserve Economic Data")
     st.text('M1 Money Supply To Total Public Debt'
     
-    from fredapi import Fred
+    #from fredapi import Fred
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     start = '2014-01-01'
     end = 'today'
