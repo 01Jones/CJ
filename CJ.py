@@ -10,6 +10,7 @@ import fredapi
 import datetime as dt
 import pydeck as pdk
 import statsmodels.api as sm
+pip install fredapi
 
 
 #Home Page
