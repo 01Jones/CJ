@@ -7,6 +7,7 @@ import requests
 import json
 import yfinance as yf
 import fredapi
+from fredapi import Fred
 import datetime as dt
 import pydeck as pdk
 import statsmodels.api as sm
@@ -103,10 +104,9 @@ if option == 'Valuation Models':
 #Page 3
 if option == 'Performance' :
     st.subheader("Federal Reserve Economic Data")
-    
     st.text('M1 Money Supply To Total Public Debt'
     
-    from fredapi import Fred
+    
 
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     start = '2014-01-01'
