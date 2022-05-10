@@ -145,8 +145,8 @@ if option == 'Performance' :
     M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
     st.area_chart(M1)
     
-    pce = fred.get_series('PCE', observation_start='2014-01-01', observation_end='today')
-    st.area_chart(pce)
+    rate = fred.get_series('OBFR', observation_start='2014-01-01', observation_end='today')
+    st.area_chart(rate)
     
    
     cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
