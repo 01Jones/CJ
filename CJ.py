@@ -106,67 +106,12 @@ if option == 'Performance' :
     st.subheader("Federal Reserve Economic Data")
     st.text('M1 Money Supply To Total Public Debt'
     
-    #from fredapi import Fred
-    #fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
-    #start = '2014-01-01'
-    #end = 'today'
 
-    two = fred.get_series('DGS2', observation_start=start, observation_end=end)
-    ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
-
-
-    two.plot(figsize=(10,5))
-    ten.plot(figsize=(10,5))
-    plt.title('Treasury Yields')
-    plt.legend('Two', 'Ten')       
             
             
             
             
             
-    
-    gdp = web.DataReader('A191RL1Q225SBEA', 'fred', start, end)
-
-    snp = fred.get_series('SP500', observation_start=start, observation_end='today')
-    pd.DataFrame(snp)
-    st.line_chart(snp)
-    
-    #Bonds
-    
-    
-    bonds = web.DataReader('DGS2', 'T10Y2Y', start, end)
-    st.write(bonds)
-
-    
-    
-    
-    
-    
-    
-    M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
-    st.area_chart(M1)
-    
-    rate = fred.get_series('OBFR', observation_start='2014-01-01', observation_end='today')
-    st.area_chart(rate)
-    
-   
-    cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
-   
-    
-    
-    
-    st.write(gdp)
-    st.write(cur)
-    st.write(snp)
-        
-
-    
-    
-    
-    
-    
-        
-     
     
 
     
