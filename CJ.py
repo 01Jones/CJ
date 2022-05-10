@@ -119,7 +119,7 @@ if option == 'Performance' :
 
 
 #Page 4
-if option == 'Digital Assets':
+if option == 'Digital Assets' :
     st.markdown('''# Crypto Currency
     ''')
 
