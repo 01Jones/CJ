@@ -1,3 +1,4 @@
+pip install fredapi
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -10,7 +11,7 @@ import fredapi
 import datetime as dt
 import pydeck as pdk
 import statsmodels.api as sm
-pip install fredapi
+
 
 
 #Home Page
