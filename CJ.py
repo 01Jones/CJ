@@ -11,7 +11,7 @@ import datetime as dt
 import pydeck as pdk
 import statsmodels.api as sm
 
-#Home Page
+# Home Page
 
 # Sidebar dropdown 
 option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'Digital Assets', 'Page 4', 'Framework')) 
