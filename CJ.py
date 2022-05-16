@@ -42,7 +42,7 @@ if option == 'Home':
     
     col1, col2, col3 = st.columns(3)
     col1.metric("Temperature", current, "1.2 °F")
-    col2.metric("Wind", w, "mph")
+    col2.metric("Wind", w, "3mph")
     col3.metric("Humidity", h, "4%")
    
  
