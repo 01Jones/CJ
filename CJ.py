@@ -60,7 +60,7 @@ if option == 'Home':
 #pages
 
 if option == 'Valuation Models':
-    st.subheader("Valuation Models")
+    st.header("Valuation Models")
     
 if option == 'Performance':
     st.subheader("Economic Indicator Correlation Matrix")
@@ -94,8 +94,8 @@ if option == 'Valuation Models':
     a4.number_input('Year 4', None, None, 40)
     a5.number_input('Year 5', None, None, 50)
     
-    sum = a1 + a2 + a3
-    st.write(sum)
+   
+    st.write(a1)
  
     
     
