@@ -84,11 +84,14 @@ if option == 'Valuation Models':
     
     st.subheader("Discounted Cash Flow Analysis")
     st.text(" ")
-    st.text("Projcted Returns")
+    st.text("Projcted Yearly Returns")
     a1, a2, a3, a4, a5 = st.columns(5)
-    a1.number_input('Return', 0, 999999999)
-    a2.number_input('Year', 0, 999999999)
-    
+    a1.number_input('Year 1', 0, 999999999)
+    a2.number_input('Year 2', 0, 999999999)
+    a3.number_input('Year 3', 0, 999999999)
+    a4.number_input('Year 4', 0, 999999999)
+    a5.number_input('Year 5', 0, 999999999)
+ 
     
     
                     
