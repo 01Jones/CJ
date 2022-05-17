@@ -87,7 +87,7 @@ if option == 'Valuation Models':
     st.text("Projcted Yearly Returns")
     a0, a1, a2, = st.columns(3)
     a3, a4, a5, = st.columns(3)
-    a0.number_input('Year 0', 0, 999999999)
+    a0.number_input(min_value=None, max_value=None, value=0)
     a1.number_input('Year 1', 0, 999999999)
     a2.number_input('Year 2', 0, 999999999)
     a3.number_input('Year 3', 0, 999999999)
