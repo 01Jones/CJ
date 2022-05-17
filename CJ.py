@@ -86,7 +86,7 @@ if option == 'Valuation Models':
     st.subheader("Discounted Cash Flow Analysis")
     st.text("")
     
-    st.text("Projcted Yearly Returns")
+    st.text("Projcted Yearly Free Cash Flow")
     a0, a1, a2, = st.columns(3)
     a3, a4, a5, = st.columns(3)
     y0 = a0.number_input('Year 0', None, None, 0)
@@ -95,6 +95,7 @@ if option == 'Valuation Models':
     y3 = a3.number_input('Year 3', None, None, 30)
     y4 = a4.number_input('Year 4', None, None, 40)
     y5 = a5.number_input('Year 5', None, None, 50)
+    r = st.number_input('Discount Rate', None, None, 20%)
     
     st.write('Net', y0 + y1 + y2 + y3 + y4 + y5)
  
