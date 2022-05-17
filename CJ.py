@@ -102,7 +102,7 @@ if option == 'Valuation Models':
     irr = (fv/pv) * (1/5) - 1
     
     st.write('Net Present Value', pv)
-    st.write('irrr', irr)
+    st.write('Internal Rate of Return', irr)
  
     
     
