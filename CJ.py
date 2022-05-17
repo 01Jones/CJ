@@ -89,7 +89,7 @@ if option == 'Valuation Models':
     st.text("Projcted Yearly Free Cash Flow")
     a0, a1, a2, = st.columns(3)
     a3, a4, a5, = st.columns(3)
-    y0 = a0.number_input('Year 0', None, None, 0)
+    y0 = a0.number_input('Initial Investment', None, None, 0)
     y1 = a1.number_input('Year 1', None, None, 10)
     y2 = a2.number_input('Year 2', None, None, 20)
     y3 = a3.number_input('Year 3', None, None, 30)
