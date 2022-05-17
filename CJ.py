@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import numpy-financial as npf
 import pandas as pd
 import pandas_datareader.data as web
 import matplotlib.pyplot as plt
@@ -99,7 +100,7 @@ if option == 'Valuation Models':
     
     fv = y0 + y1 + y2 + y3 + y4 + y5
     pv = y0 + y1/(1+r/100)**1 + y2/(1+r/100)**2 + y3/(1+r/100)**3 + y4/(1+r/100)**4 + y5/(1+r/100)**5
-    irr = np.irr([-y0, y1, y2, y3, y4, y5])
+    irr = npf.irr([-y0, y1, y2, y3, y4, y5])
    
     st.write('Net Present Value', pv)
     st.write('Internal Rate of Return', irr)
