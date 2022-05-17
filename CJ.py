@@ -95,9 +95,10 @@ if option == 'Valuation Models':
     y3 = a3.number_input('Year 3', None, None, 30)
     y4 = a4.number_input('Year 4', None, None, 40)
     y5 = a5.number_input('Year 5', None, None, 50)
-    r = st.slider('Discount Rate Percentage', 0, 100, 20)
-    
-    st.write('Net', y0 + y1 + y2 + y3 + y4 + y5)
+    r = st.slider('Discount Rate %', 0, 100, 20)
+   
+    y1 = (np.fv(r, 5, c, fv, when='end'))
+    st.write('Present Value', y0 + (y1*(1/(1+r)^1)) + y2 + y3 + y4 + y5)
  
     
     
