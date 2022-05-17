@@ -94,7 +94,7 @@ if option == 'Valuation Models':
     a4.number_input('Year 4', None, None, 40)
     a5.number_input('Year 5', None, None, 50)
     
-    sum = a1+a2
+    sum = (a1+a2)
     st.write('sum')
  
     
