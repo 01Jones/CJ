@@ -81,10 +81,11 @@ if option == 'Framework':
 #Page 2
 
 if option == 'Valuation Models':
-    st.text("")
     st.markdown("""---""")
+    st.text("")
     st.subheader("Discounted Cash Flow Analysis")
     st.text("")
+    
     st.text("Projcted Yearly Returns")
     a0, a1, a2, = st.columns(3)
     a3, a4, a5, = st.columns(3)
@@ -95,7 +96,6 @@ if option == 'Valuation Models':
     y4 = a4.number_input('Year 4', None, None, 40)
     y5 = a5.number_input('Year 5', None, None, 50)
     
-   
     st.write('Net', y0 + y1 + y2 + y3 + y4 + y5)
  
     
@@ -109,7 +109,8 @@ if option == 'Valuation Models':
 #Page 3
 if option == 'Performance' :
     st.subheader("Federal Reserve Economic Data")
-    
+    st.markdown("""---""")
+    st.text("")
     st.text('M1 Money Supply To Total Public Debt')
   
   
