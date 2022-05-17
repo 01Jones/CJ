@@ -86,7 +86,7 @@ if option == 'Valuation Models':
     st.text(" ")
     st.text("Projcted Returns")
     a1, a2, a3, a4, a5 = st.columns(5)
-    a1 = st.number_input
+    a1 = st.number_input('net', 0, 999999999)
     
     
     
