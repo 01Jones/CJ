@@ -21,7 +21,7 @@ if option == 'Home':
     st.title("Collin Jones")
     st.header("Project")
     st.text(" ")
-    st.text(" < Navigation With Left Sidebar | Framework & Source Code On 'Framework' Page")
+    st.text("  Navigation With Left Dashboard | Framework & Source Code On 'Framework' Page")
     st.text(" ")
     st.text(" ")
     st.text("Asset Valuations, Performance Visualization Models, Digital Asset Tracker, Page 4, Framework")
