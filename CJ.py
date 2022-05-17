@@ -83,7 +83,7 @@ if option == 'Framework':
 if option == 'Valuation Models':
     
     st.subheader("Discounted Cash Flow Analysis")
-    st.text(" ")
+    st.text("***")
     st.text("Projcted Yearly Returns")
     a0, a1, a2, = st.columns(3)
     a3, a4, a5, = st.columns(3)
