@@ -88,7 +88,7 @@ if option == 'Valuation Models':
     a0, a1, a2, = st.columns(3)
     a3, a4, a5, = st.columns(3)
     a0.number_input('Year 0', 0, 999999999)
-    a1.number_input('Year 0', 0, 999999999)
+    a1.number_input('Year 1', 0, 999999999)
     a2.number_input('Year 2', 0, 999999999)
     a3.number_input('Year 3', 0, 999999999)
     a4.number_input('Year 4', 0, 999999999)
