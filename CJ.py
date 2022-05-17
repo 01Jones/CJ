@@ -120,7 +120,7 @@ if option == 'Performance' :
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
 
 
-    st.line_chart(two)
+    st.line_chart(two, five)
 
     
     
