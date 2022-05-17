@@ -114,7 +114,7 @@ if option == 'Performance' :
     two = fred.get_series('DGS2', observation_start=start, observation_end=end)
     five = fred.get_series('DGS5', observation_start=start, observation_end=end)
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
-    bonds = 
+
 
     st.line_chart(two, five)
 
