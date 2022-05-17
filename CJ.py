@@ -82,7 +82,7 @@ if option == 'Framework':
 
 if option == 'Valuation Models':
     st.text("")
-    st.line
+    st.markdown("""---""")
     st.subheader("Discounted Cash Flow Analysis")
     st.text("")
     st.text("Projcted Yearly Returns")
