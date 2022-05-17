@@ -85,7 +85,8 @@ if option == 'Valuation Models':
     st.subheader("Discounted Cash Flow Analysis")
     st.text(" ")
     st.text("Projcted Returns")
-    a1, a2, a3, a4, a5 = st.number_input
+    a1, a2, a3, a4, a5 = st.columns
+    a1.st.number_input
     
     st.write(year1 + year2)
     
