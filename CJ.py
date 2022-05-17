@@ -104,7 +104,7 @@ if option == 'Valuation Models':
     irr = ir * 100
    
     st.write('Net Present Value', pv)
-    st.write('Internal Rate of Return %', irr)
+    st.write('Internal Rate of Return', irr)
  
     
     
