@@ -99,7 +99,7 @@ if option == 'Valuation Models':
     
     pv = y0 + y1/(1+r/100)**1 + y2/(1+r/100)**2 + y3/(1+r/100)**3 + y4/(1+r/100)**4 + y5/(1+r/100)**5
     
-    st.write('Present Value', pv)
+    st.write('Net Present Value', pv)
  
     
     
