@@ -118,11 +118,9 @@ if option == 'Performance' :
     two = fred.get_series('DGS2', observation_start=start, observation_end=end)
     five = fred.get_series('DGS5', observation_start=start, observation_end=end)
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
-    chart_data = pd.DataFrame(
-     (two, five, ten),
-     columns=['a', 'b', 'c'])
 
-    st.line_chart(chart_data)
+
+    st.line_chart(two)
 
     
     
