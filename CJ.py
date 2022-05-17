@@ -85,11 +85,7 @@ if option == 'Valuation Models':
     st.subheader("Discounted Cash Flow Analysis")
     st.text(" ")
     st.text("Projcted Returns")
-    year1 = st.number_input("1st Year", 0,999999999)
-    year2 = st.number_input("2nd Year", 0,999999999)
-    st.number_input("3rd Year", 0,999999999)
-    st.number_input("4th Year", 0,999999999)
-    st.number_input("5th Year", 0,999999999)
+    a1, a2, a3, a4, a5 = st.number_input
     
     st.write(year1 + year2)
     
@@ -118,7 +114,7 @@ if option == 'Performance' :
     two = fred.get_series('DGS2', observation_start=start, observation_end=end)
     five = fred.get_series('DGS5', observation_start=start, observation_end=end)
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
-
+    bonds = 
 
     st.line_chart(two, five)
 
