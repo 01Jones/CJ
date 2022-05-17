@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import numpy-financial as npf
+import numpy_financial as npf
 import pandas as pd
 import pandas_datareader.data as web
 import matplotlib.pyplot as plt
