@@ -103,7 +103,7 @@ if option == 'Valuation Models':
     irr = npf.irr([-y0, y1, y2, y3, y4, y5])
    
     st.write('Net Present Value', pv)
-    st.write('Internal Rate of Return', irr)
+    st.write('Internal Rate of Return', irr%)
  
     
     
