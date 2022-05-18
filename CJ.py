@@ -84,6 +84,18 @@ if option == 'Framework':
 if option == 'Valuation Models':
     st.markdown("""---""")
     st.text("")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    st.markdown("""---""")
     st.subheader("Discounted Cash Flow Analysis")
     st.text("")
     
