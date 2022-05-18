@@ -26,7 +26,7 @@ if option == 'Home':
     st.text(" ")
     st.markdown("""---""")
     st.text(" ")
-    st.text(" Index | Home Page, Valuations Models, Performance Visualization Models, Digital Asset Tracker, Page 4, Framework")
+    st.text(" Index | Valuations Models, Performance Visualization Models, Digital Asset Tracker, Page 4, Framework")
     st.text(" ")
     st.text(" ")
     st.text(" ")
