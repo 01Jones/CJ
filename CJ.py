@@ -170,6 +170,7 @@ if option == 'Performance' :
     
     gdp = fred.get_series('GDP', observation_start='2014-01-01', observation_end='today')
     
+    st.pyplot(gdp)
     st.write(gdp)
     st.write(cur)
     st.write(snp)
