@@ -133,7 +133,7 @@ if option == 'Valuation Models':
 if option == 'Performance' :
     st.markdown("""---""")
     st.text("")
-    nasdaqdatalink.ApiConfig.api_key = "YOUR_KEY_HERE"
+    nasdaqdatalink.ApiConfig.api_key = "KtkauE_-pic1EFrCBFb4"
     gdp = nasdaqdatalink.get("FRED/GDP")
     
  
