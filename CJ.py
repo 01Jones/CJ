@@ -141,9 +141,11 @@ if option == 'Performance' :
     
     
     gdp = nasdaqdatalink.get("FRED/GDP", start_date=start, end_date=end)
-    
+    data = nasdaqdatalink.get_table('ZACKS/FC', paginate=True, ticker=['AAPL', 'MSFT'], per_end_date={'gte': '2015-01-01'}, qopts={'columns':['ticker', 'per_end_date']})
+
  
     st.write(gdp)
+    st.write(data)
   
         
 
