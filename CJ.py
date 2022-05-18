@@ -136,7 +136,7 @@ if option == 'Performance' :
     
     nasdaqdatalink.ApiConfig.api_key = "KtkauE_-pic1EFrCBFb4"
     start = pd.to_datetime('2021-01-01')
-    end = = pd.to_datetime('today')
+    end = pd.to_datetime('today')
     
     
     
