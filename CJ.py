@@ -133,49 +133,12 @@ if option == 'Valuation Models':
 if option == 'Performance' :
     st.markdown("""---""")
     st.text("")
+    nasdaqdatalink.ApiConfig.api_key = "YOUR_KEY_HERE"
+    gdp = nasdaqdatalink.get("FRED/GDP")
     
-    st.subheader("Federal Reserve Economic Data")
-    
-    st.text('M1 Money Supply To Total Public Debt')
-  
-  
-    
-    
-    from fredapi import Fred
-    fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
-   
-    start = ('2010-01-01')
-    end = ('today')
-
-
-    two = fred.get_series('DGS2', observation_start=start, observation_end=end)
-    five = fred.get_series('DGS5', observation_start=start, observation_end=end)
-    ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
-
-
-
-    
-    
-    
-    
-    
-    
-    M1 = fred.get_series('M1SL', observation_start='2014-01-01', observation_end='today')
-    st.area_chart(M1)
-    
-    pce = fred.get_series('PCE', observation_start='2014-01-01', observation_end='today')
-    st.area_chart(pce)
-    
-   
-    cur = fred.get_series('WCURCIR', observation_start='2014-01-01', observation_end='today')
-   
-    
-    gdp = fred.get_series('GDP', observation_start='2014-01-01', observation_end='today')
-    
-    
+ 
     st.write(gdp)
-    st.write(cur)
-    st.write(snp)
+  
         
 
     
