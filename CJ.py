@@ -134,7 +134,7 @@ if option == 'Performance' :
     st.markdown("""---""")
     st.text("")
     nasdaqdatalink.ApiConfig.api_key = "KtkauE_-pic1EFrCBFb4"
-    gdp = nasdaqdatalink.get("FRED/GDP")
+    gdp = nasdaqdatalink.get("FRED/GDP", start_date="2001-12-31", end_date="today")
     
  
     st.write(gdp)
