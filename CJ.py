@@ -8,6 +8,7 @@ import requests
 import json
 import yfinance as yf
 import fredapi
+from fredapi import Fred
 import datetime as dt
 import pydeck as pdk
 import statsmodels.api as sm
