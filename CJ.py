@@ -134,8 +134,8 @@ if option == 'Performance' :
     st.markdown("""---""")
     st.text("")
     
-    fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
-    nasdaqdatalink.ApiConfig.api_key = "KtkauE_-pic1EFrCBFb4"
+fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
+nasdaqdatalink.ApiConfig.api_key = "KtkauE_-pic1EFrCBFb4"
     start = pd.to_datetime('2021-01-01')
     end = pd.to_datetime('today')
     
