@@ -134,11 +134,16 @@ if option == 'Performance' :
     st.markdown("""---""")
     st.text("")
     
+    fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     nasdaqdatalink.ApiConfig.api_key = "KtkauE_-pic1EFrCBFb4"
     start = pd.to_datetime('2021-01-01')
     end = pd.to_datetime('today')
     
     
+
+    two = fred.get_series('DGS2', observation_start=start, observation_end=end)
+    five = fred.get_series('DGS5', observation_start=start, observation_end=end)
+    ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
     
     gdp = nasdaqdatalink.get("FRED/GDP", start_date=start, end_date=end)
     data = nasdaqdatalink.get_table('ZACKS/FC', paginate=True, ticker=['AAPL', 'MSFT'], per_end_date={'gte': '2015-01-01'}, qopts={'columns':['ticker', 'per_end_date']})
