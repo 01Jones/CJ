@@ -163,7 +163,7 @@ if option == 'Performance' :
      'f(x)': np.sin(x / 5)
     })
 
-    st.alt.Chart(source).mark_line().encode(
+    st.alt_Chart(source).mark_line().encode(
      x='x',
       y='f(x)'
     )
