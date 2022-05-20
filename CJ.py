@@ -156,6 +156,7 @@ if option == 'Performance' :
     st.write(gdp)
     st.write(un)
     plt.plot(gdp)
+    plt.show()
         
 
     
