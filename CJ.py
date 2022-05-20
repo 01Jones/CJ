@@ -157,7 +157,16 @@ if option == 'Performance' :
     st.write(gdp)
     st.write(un)
     st.write(data)
-    st.alt_chart(gdp)
+    x = np.arange(100)
+    source = pd.DataFrame({
+     'x': x,
+     'f(x)': np.sin(x / 5)
+    })
+
+    st.alt.Chart(source).mark_line().encode(
+     x='x',
+      y='f(x)'
+    )
         
 
     
