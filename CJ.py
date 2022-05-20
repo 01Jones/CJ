@@ -157,7 +157,7 @@ if option == 'Performance' :
     st.write(gdp)
     st.write(un)
     st.write(data)
-    st.altair_chart(gdp)
+    st.alt_chart(gdp)
         
 
     
