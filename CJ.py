@@ -6,6 +6,7 @@ import pandas_datareader.data as web
 import matplotlib.pyplot as plt
 import requests
 import json
+import altair as alt
 import yfinance as yf
 import fredapi
 from fredapi import Fred
@@ -156,7 +157,7 @@ if option == 'Performance' :
     st.write(gdp)
     st.write(un)
     st.write(data)
-    st.line_chart(gdp, width=0, height=0, use_container_width=True)
+    st.altair_chart(gdp)
         
 
     
