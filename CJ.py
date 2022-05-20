@@ -156,7 +156,7 @@ if option == 'Performance' :
     st.write(gdp)
     st.write(un)
     st.write(data)
-    st.line_chart(data=gdp, width=10, height=5, use_container_width=True)
+    st.line_chart(gdp, width=4, height=2, true)
         
 
     
