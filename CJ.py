@@ -155,7 +155,8 @@ if option == 'Performance' :
  
     st.write(gdp)
     st.write(un)
-  
+    fig, un = plt.subplots()
+    ax.hist(arr)
         
 
     
