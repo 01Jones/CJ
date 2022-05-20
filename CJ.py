@@ -152,12 +152,11 @@ if option == 'Performance' :
     
     data = nasdaqdatalink.get_table('ZACKS/FC', paginate=True, ticker=['AAPL', 'MSFT'], per_end_date={'gte': '2015-01-01'}, qopts={'columns':['ticker', 'per_end_date']})
 
- 
+    
     st.write(gdp)
     st.write(un)
     st.write(data)
-    plt.plot(gdp)
-    plt.show()
+    st.line_chart(data=gdp, width=10, height=5, use_container_width=True)
         
 
     
