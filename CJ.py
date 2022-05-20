@@ -146,12 +146,15 @@ if option == 'Performance' :
     five = fred.get_series('DGS5', observation_start=start, observation_end=end)
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
     
-    gdp = fred.get_series('GDP', observation_start=start, observation_end=end)
+    un = fred.get_series_all_releases('UNRATE', observation_start=start, observation_end=end)
+    gdp = fred.get_series_all_releases('GDP', observation_start=start, observation_end=end)
+    
+    
     data = nasdaqdatalink.get_table('ZACKS/FC', paginate=True, ticker=['AAPL', 'MSFT'], per_end_date={'gte': '2015-01-01'}, qopts={'columns':['ticker', 'per_end_date']})
 
  
     st.write(gdp)
-    st.write(data)
+    st.write(un)
   
         
 
