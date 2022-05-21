@@ -147,7 +147,7 @@ if option == 'Performance' :
         cumret = cumret.fillna(0)
         return cumret
     
-    spy = relativeret(yf.download(SPY,start,end) ['Adj Close'])
+    spy = relativeret(yf.download('SPY',start,end) ['Adj Close'])
     
     
     
