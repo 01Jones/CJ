@@ -164,27 +164,15 @@ if option == 'Performance' :
     st.write(un)
     st.write(spy)
    
-    df = pd.DataFrame(
-     np.random.randn(200, 3),
-     columns=['a', 'b', 'c'])
+ 
 
-    c = alt.Chart(df).mark_circle().encode(
-     x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
+    c = alt.Chart(gdp).mark_line().encode(
+     x='date', y='value', size='c', color='c')
 
     st.altair_chart(c, use_container_width=True)
     
     
     
-    
-    st.altair_chart(gdp).mark_area(
-        color="lightblue",
-        interpolate='step-after',
-        line=True
-    ).encode(
-        x='date',
-        y='value'
-    )
-   
     
     
     
