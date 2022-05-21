@@ -155,16 +155,17 @@ if option == 'Performance' :
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
     
     un = fred.get_series_as_of_date('UNRATE', end)
-    gdp = fred.get_series_as_of_date('GDP', end)
+    gd = fred.get_series_as_of_date('GDP', end)
     
     #spy = nasdaqdatalink.get("SPY", start_date=start, end_date=end, returns="numpy")
     
     
-    st.write(gdp)
+    st.write(gd)
     st.write(un)
     st.write(spy)
     
-    st.linechart(gdp.value)
+    gdp = pd.DataFrame(gd)
+    st.write(gdp)
     
     
     
