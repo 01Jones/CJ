@@ -164,7 +164,7 @@ if option == 'Performance' :
     st.write(un)
     st.write(spy)
     
-    st.pyplot(gdp)
+    st.linechart(gdp)
     
     
     
