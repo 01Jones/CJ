@@ -148,10 +148,12 @@ if option == 'Performance' :
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
     
     un = fred.get_series('UNRATE', observation_start=start, observation_end=end)
-    gdp = fred.get_series('GDP', observation_start=start, observation_end=end)
+    gdp = pd.DataFrame(
+        fred.get_series('GDP', observation_start=start, observation_end=end)
     
     
-    data = pd.DataFrame(nasdaqdatalink.get_table('ZACKS/FC', paginate=True, ticker=['AAPL', 'MSFT'], per_end_date={'gte': '2015-01-01'}, qopts={'columns':['ticker', 'per_end_date']}))
+    data = pd.DataFrame(
+        nasdaqdatalink.get_table('ZACKS/FC', paginate=True, ticker=['AAPL', 'MSFT'], per_end_date={'gte': '2015-01-01'}, qopts={'columns':['ticker', 'per_end_date']}))
 
     
     st.write(gdp)
@@ -160,14 +162,7 @@ if option == 'Performance' :
     
     
     
-    df = pd.DataFrame(
-     (data),
-     columns=['a', 'b'])
-
-    c = alt.Chart(df).mark_circle().encode(
-     x='a', y='b', size='c', color='c', tooltip=['a', 'b'])
-
-    st.altair_chart(c, use_container_width=True)
+   
     
         
 
