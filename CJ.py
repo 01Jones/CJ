@@ -122,6 +122,8 @@ if option == 'Valuation Models':
    
     st.write('Net Present Value', pv)
     st.write('Internal Rate of Return', irr)
+    
+    
  
     
     
@@ -161,6 +163,8 @@ if option == 'Performance' :
     st.write(gdp)
     st.write(un)
     st.write(spy)
+    
+    st.plotly_chart(spy)
     
     
     
