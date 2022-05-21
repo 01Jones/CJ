@@ -161,7 +161,7 @@ if option == 'Performance' :
     
     
     df = pd.DataFrame(
-     data),
+     (data),
      columns=['a', 'b'])
 
     c = alt.Chart(df).mark_circle().encode(
