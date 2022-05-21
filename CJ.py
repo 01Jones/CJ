@@ -173,6 +173,17 @@ if option == 'Performance' :
 
     st.altair_chart(c, use_container_width=True)
     
+    
+    
+    
+    alt.Chart(gdp).mark_area(
+        color="lightblue",
+        interpolate='step-after',
+        line=True
+    ).encode(
+        x='date',
+        y='value'
+    )
    
     
     
