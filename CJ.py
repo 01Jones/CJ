@@ -161,11 +161,11 @@ if option == 'Performance' :
     
     
     df = pd.DataFrame(
-     np.random.randn(200, 3),
-     columns=['a', 'b', 'c'])
+     data),
+     columns=['a', 'b'])
 
     c = alt.Chart(df).mark_circle().encode(
-     x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
+     x='a', y='b', size='c', color='c', tooltip=['a', 'b'])
 
     st.altair_chart(c, use_container_width=True)
     
