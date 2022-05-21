@@ -164,7 +164,7 @@ if option == 'Performance' :
     st.write(un)
     st.write(spy)
     
-    st.plotly_chart(spy)
+    sst.pyplot(gdp)
     
     
     
