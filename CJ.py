@@ -141,6 +141,15 @@ if option == 'Performance' :
     start = pd.to_datetime('2010-01-01')
     end = pd.to_datetime('today')
     
+    def relativeret(df):
+        rel = df.pct_change()
+        cumret = (1+rel).cumprod() - 1
+        cumret = cumret.fillna(0)
+        return cumret
+    
+    spy = relativeret(yf.download(SPY,start,end) ['Adj Close'])
+    
+    
     
 
     two = fred.get_series('DGS2', observation_start=start, observation_end=end)
