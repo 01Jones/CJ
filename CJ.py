@@ -155,7 +155,7 @@ if option == 'Performance' :
     
     st.write(gdp)
     st.write(un)
-    st.write(data)
+    st.write(spy)
     
     
     
