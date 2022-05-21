@@ -150,7 +150,7 @@ if option == 'Performance' :
     un = fred.get_series('UNRATE', observation_start=start, observation_end=end)
     gdp = fred.get_series('GDP', observation_start=start, observation_end=end)
     
-    
+    spy = nasdaqdatalink.get("SPY", start_date=start, end_date=end, returns="numpy")
     
     
     st.write(gdp)
