@@ -176,7 +176,7 @@ if option == 'Performance' :
     
     
     
-    st.alt.Chart(gdp).mark_area(
+    st.altair_chart(gdp).mark_area(
         color="lightblue",
         interpolate='step-after',
         line=True
