@@ -151,7 +151,7 @@ if option == 'Performance' :
     gdp = fred.get_series('GDP', observation_start=start, observation_end=end)
     
     
-    data = nasdaqdatalink.get_table('ZACKS/FC', paginate=True, ticker=['AAPL', 'MSFT'], per_end_date={'gte': '2015-01-01'}, qopts={'columns':['ticker', 'per_end_date']})
+    data = pd.DataFrame(nasdaqdatalink.get_table('ZACKS/FC', paginate=True, ticker=['AAPL', 'MSFT'], per_end_date={'gte': '2015-01-01'}, qopts={'columns':['ticker', 'per_end_date']}))
 
     
     st.write(gdp)
