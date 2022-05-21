@@ -156,7 +156,7 @@ if option == 'Performance' :
     
     un = fred.get_series_as_of_date('UNRATE', end)
     gdp = pd.DataFrame(fred.get_series_as_of_date('GDP', end))
-    gdp.drop('realtime_start', axis=1)
+    
     #spy = nasdaqdatalink.get("SPY", start_date=start, end_date=end, returns="numpy")
     
     
@@ -164,7 +164,7 @@ if option == 'Performance' :
     st.write(un)
     st.write(spy)
    
-    st.line_chart(gdp) 
+    st.altair_chart(gdp, use_container_width=True) 
     
    
     
