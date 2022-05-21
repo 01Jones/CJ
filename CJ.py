@@ -167,7 +167,7 @@ if option == 'Performance' :
  
 
     c = alt.Chart(gdp).mark_line().encode(
-     x='date', y='value', size='c', color='c')
+     x='date', y='value')
 
     st.altair_chart(c, use_container_width=True)
     
