@@ -163,12 +163,11 @@ if option == 'Performance' :
     cir = fred.get_series('WCURCIR')
     cir.name = 'Currency in Circulation'
     un = fred.get_series('UNRATE', start, end)
-    gdp = fred.get_series('GDP', start, end)
+    un.name = 'Unemployment'
     
+    econ = pd.merge(gdp, cir, left_index=True, right_index=True)
     
-    st.write(cir)
-    
-
+    st.write(econ)
     
     st.text('Gross Domestic Product')    
     st.write(gdp)
