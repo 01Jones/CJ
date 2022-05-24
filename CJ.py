@@ -156,7 +156,7 @@ if option == 'Performance' :
     five.name = 'Five Year'
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
     ten.name = 'Ten Year'
-    bonds = pd.merge(two, five, ten, left_index=True, right_index=True)
+    bonds = pd.merge(two, five, ten)
     
     un = fred.get_series('UNRATE', start, end)
     gdp = fred.get_series_('GDP', start, end)
