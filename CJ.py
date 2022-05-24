@@ -159,9 +159,13 @@ if option == 'Performance' :
     
     #spy = nasdaqdatalink.get("SPY", start_date=start, end_date=end, returns="numpy")
     
-    
+    st.text('Gross Domestic Product')    
     st.write(gdp)
+    
+    st.text('Unemployment')        
     st.write(un)
+    
+    st.text('S&P 500 Index)
     st.write(spy)
    
  
