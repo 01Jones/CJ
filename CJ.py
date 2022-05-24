@@ -153,14 +153,18 @@ if option == 'Performance' :
     two = fred.get_series('DGS2', observation_start=start, observation_end=end)
     five = fred.get_series('DGS5', observation_start=start, observation_end=end)
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
+    bonds = pd.merge(two, five, ten, left_index=True, righ_index=True)
     
-    un = fred.get_series_as_of_date('UNRATE', end)
-    gdp = pd.DataFrame(fred.get_series_as_of_date('GDP', end))
+    un = fred.get_series('UNRATE', start, end)
+    gdp = fred.get_series_('GDP', start, end)
+    
     
     #spy = nasdaqdatalink.get("SPY", start_date=start, end_date=end, returns="numpy")
     
+    st.write(bonds)
+    
     st.text('Gross Domestic Product')    
-    st.write(gdp.tail(10))
+    st.write(gdp)
     
     st.text('Unemployment')        
     st.write(un)
