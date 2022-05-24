@@ -165,7 +165,7 @@ if option == 'Performance' :
     st.text('Unemployment')        
     st.write(un)
     
-    st.text('S&P 500 Index)
+    st.text('S&P 500 Index')
     st.write(spy)
    
  
