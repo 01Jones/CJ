@@ -159,7 +159,7 @@ if option == 'Performance' :
   
     cir = fred.get_series('WCURCIR')
     un = fred.get_series('UNRATE', start, end)
-    gdp = fred.get_series_('GDP', start, end)
+    gdp = fred.get_series('GDP', start, end)
     
     
     #spy = nasdaqdatalink.get("SPY", start_date=start, end_date=end, returns="numpy")
