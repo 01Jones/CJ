@@ -143,12 +143,6 @@ if option == 'Performance' :
     start = pd.to_datetime('2010-01-01')
     end = pd.to_datetime('today')
     
-   
-    
-    spy = yf.download('SPY',start,end) 
-    
-    
-    
 
     two = fred.get_series('DGS2', observation_start=start, observation_end=end)
     two.name = 'Two Year'
@@ -156,7 +150,6 @@ if option == 'Performance' :
     five.name = 'Five Year'
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
     ten.name = 'Ten Year'
-    
     
     gdp = fred.get_series('GDP', start, end)
     gdp.name = 'Gross Domestic Product'
@@ -167,22 +160,26 @@ if option == 'Performance' :
     
     econ = pd.merge(cir, un, left_index = True, right_index = True)
     
+    
+    
     st.text('Gross Domestic Product') 
-    st.write(econ)   
+    st.write(gdp)   
+    
+    
+    st.markdown("""---""")
    
     
-    st.text('Unemployment')        
-    st.write(un)
+    st.text('Currency in Circulation | Unemployment')        
+    st.write(econ)
     
-    st.text('S&P 500 Index')
-    st.write(spy)
+   
    
  
 
     c = alt.Chart(gdp).mark_line().encode(
      x='date', y='value')
 
-    st.altair_chart(c, use_container_width=False)
+    st.altair_chart(c, use_container_width=True)
     
     
     
