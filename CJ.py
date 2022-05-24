@@ -165,7 +165,7 @@ if option == 'Performance' :
     un = fred.get_series('UNRATE', start, end)
     un.name = 'Unemployment'
     
-    econ = pd.merge(cir, un, how=outer)
+    econ = pd.merge(cir, un)
     
     st.text('Gross Domestic Product') 
     st.write(econ)   
