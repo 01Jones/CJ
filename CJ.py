@@ -160,7 +160,7 @@ if option == 'Performance' :
     
     gdp = fred.get_series('GDP', start, end)
     gdp.name = 'Gross Domestic Product'
-    cir = fred.get_series('WCURCIR')
+    cir = fred.get_series('WCURCIR', start, end)
     cir.name = 'Currency in Circulation'
     un = fred.get_series('UNRATE', start, end)
     un.name = 'Unemployment'
