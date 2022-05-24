@@ -156,15 +156,17 @@ if option == 'Performance' :
     five.name = 'Five Year'
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
     ten.name = 'Ten Year'
-    bonds = pd.join(two, five, ten)
-    
+  
+    cir = fred.get_series('WCIRCUR')
     un = fred.get_series('UNRATE', start, end)
     gdp = fred.get_series_('GDP', start, end)
     
     
     #spy = nasdaqdatalink.get("SPY", start_date=start, end_date=end, returns="numpy")
     
-    st.write(bonds)
+    st.write(cir)
+    
+
     
     st.text('Gross Domestic Product')    
     st.write(gdp)
