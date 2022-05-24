@@ -163,7 +163,7 @@ if option == 'Performance' :
     
     
     st.text('Gross Domestic Product') 
-    st.line_chart(gdo)
+    st.line_chart(gdp)
     st.write(gdp)   
     
     
