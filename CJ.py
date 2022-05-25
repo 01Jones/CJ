@@ -164,7 +164,7 @@ if option == 'Performance' :
     
     st.text('Gross Domestic Product') 
     st.line_chart(gdp)
-    st.write(gdp)   
+    st.write(gdp.tail())   
     
     
     st.markdown("""---""")
