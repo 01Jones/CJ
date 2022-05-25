@@ -151,8 +151,8 @@ if option == 'Performance' :
     ten = fred.get_series('T10Y2Y', observation_start=start, observation_end=end)
     ten.name = 'Ten Year'
     
-    gdp = fred.get_series('GDP', start, end)
-    gdp.name = 'Gross Domestic Product'
+    gdp = fred.get_series('GDPC1', start, end)
+    gdp.name = 'Real Gross Domestic Product'
     cir = fred.get_series('WCURCIR', start, end)
     cir.name = 'Currency in Circulation'
     un = fred.get_series('UNRATE', start, end)
