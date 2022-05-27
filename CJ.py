@@ -325,7 +325,7 @@ if option == 'Framework' :
      st.markdown("""---""")
     
     
-     st.subheader('https://github.com/01Jones/CJ/edit/main/CJ.py')
+     st.text('https://github.com/01Jones/CJ/edit/main/CJ.py')
       
      st.text(" ")
      st.markdown("""---""")
