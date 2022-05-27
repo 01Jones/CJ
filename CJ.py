@@ -24,8 +24,8 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Perform
 #Title & Header
 if option == 'Home':
     st.title("Collin Jones")
-    st.header("Project")
-    st.text(" ")
+    st.header("Portfolio Project")
+    st.text("Work in progress")
     st.text("  Navigation With Left Dashboard | Framework & Source Code On 'Framework' Page")
     st.text(" ")
     st.markdown("""---""")
