@@ -19,7 +19,7 @@ import nasdaqdatalink
 # Home Page
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'Digital Assets', 'Page 4', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'Digital Assets', 'Comparison Analysis', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
@@ -30,7 +30,7 @@ if option == 'Home':
     st.text(" ")
     st.markdown("""---""")
     st.text(" ")
-    st.text(" Index | Valuations Models, Performance Visualization Models, Digital Asset Tracker, Page 4, Framework")
+    st.text(" Index | Valuations Models, Performance Visualization Models, Digital Asset Tracker, Comparison Analysis, Framework")
     st.text(" ")
     st.text(" ")
     st.text(" ")
@@ -73,6 +73,11 @@ if option == 'Performance':
 
 if option == 'Digital Assets':
     st.header("Digital Assets")
+    
+if option == 'Comparison Analysis':
+    st.header("Digital Assets")
+    
+    
 
 if option == 'Framework':
     st.subheader("Framework")
@@ -290,7 +295,7 @@ if option == 'Digital Assets' :
 
 #Page 5
 
-if option == 'Page 4' :
+if option == 'Comparison Analysis' :
     st.text("Data")
     
     tickers = ('VTI', 'SPY', 'DIA', 'GME', 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD')
