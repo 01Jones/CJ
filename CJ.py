@@ -322,7 +322,7 @@ if option == 'Comparison Analysis' :
     
 if option == 'Framework & Code Source' :
      st.markdown("""---""")
-     st.text("")
+     
   
      st.subheader('https://github.com/01Jones/CJ/edit/main/CJ.py')
      st.text("")
