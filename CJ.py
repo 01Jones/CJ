@@ -323,6 +323,6 @@ if option == 'Comparison Analysis' :
 if option == 'Framework' :
      st.text("Data")
   
-     st.link('https://github.com/01Jones/CJ/edit/main/CJ.py')
+     st.subheader('https://github.com/01Jones/CJ/edit/main/CJ.py')
  
         
