@@ -164,14 +164,14 @@ if option == 'Performance' :
     un.name = 'Unemployment'
     cpi = fred.get_series('CPGRLE01ISQ659N', start, end)
     
-    gdpcpi = pd.merge(gdp, cpi, how=inner)
+    gdpcpi = pd.merge(gdp, cpi, left_index = True, right_index = True)
     econ = pd.merge(cir, un, left_index = True, right_index = True)
     
     
     
     st.text('Gross Domestic Product') 
     st.line_chart(gdp)
-    st.write(gdp.tail())   
+    st.write(gdpcpi.tail())   
     
     
     st.markdown("""---""")
