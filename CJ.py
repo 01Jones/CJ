@@ -163,6 +163,7 @@ if option == 'Performance' :
     un = fred.get_series('UNRATE', start, end)
     un.name = 'Unemployment'
     cpi = fred.get_series('CPGRLE01ISQ659N', start, end)
+    cpi.name = 'Consumer Price Index'
     
     gdpcpi = pd.merge(gdp, cpi, left_index = True, right_index = True)
     econ = pd.merge(cir, un, left_index = True, right_index = True)
