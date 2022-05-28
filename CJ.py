@@ -162,7 +162,9 @@ if option == 'Performance' :
     cir.name = 'Currency in Circulation'
     un = fred.get_series('UNRATE', start, end)
     un.name = 'Unemployment'
+    cpi = fred.get_series('CPGRLE01ISQ659N', start, end)
     
+    gdpcpi = pd.merge(gdp, cpi, how=inner)
     econ = pd.merge(cir, un, left_index = True, right_index = True)
     
     
