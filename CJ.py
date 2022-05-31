@@ -106,7 +106,7 @@ if option == 'Valuation Models':
     
     
     st.markdown("""---""")
-    st.subheader("Discounted Cash Flow Analysis")
+    st.subheader("Simple Discounted Cash Flow Analysis")
     st.text("")
     
     st.text("Projcted Yearly Free Cash Flow")
