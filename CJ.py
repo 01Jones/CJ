@@ -171,7 +171,7 @@ if option == 'Performance' :
     
     
     st.text('Gross Domestic Product') 
-    st.line_chart(gdp)
+    st.line_chart(gdpcpi)
     st.write(gdpcpi.tail())   
     
     
