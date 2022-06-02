@@ -165,8 +165,8 @@ if option == 'Performance' :
     cpi = fred.get_series('CPGRLE01ISQ659N', start, end)
     cpi.name = 'Consumer Price Index'
     
-    gdpcpi = pd.merge(gdp, cpi, left_index = True, right_index = True)
-    econ = pd.merge(cir, un, left_index = True, right_index = True)
+    gdpcpi = pd.merge(gdp, un, left_index = True, right_index = True)
+    econ = pd.merge(cir, cpi, left_index = True, right_index = True)
     
     
     
