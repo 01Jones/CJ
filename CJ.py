@@ -208,7 +208,7 @@ if option == 'Digital Assets' :
     
     tik = st.text_input('Company Ticker', 'AAPL')
     dl.get("10-K", "tik", amount=5)
-    dl.get("40-Q", "tik", amount=5)
+    dl.get("10-Q", "tik", amount=40)
     dl.get("8-K", "tik", amount=5)
     
     
