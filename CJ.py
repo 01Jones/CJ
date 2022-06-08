@@ -210,7 +210,7 @@ if option == 'Performance' :
 
 #Page 4
 if option == 'Digital Assets' :
-    st.markdown('''# Crypto Currency
+    st.markdown('''# Wall St.
     ''')
     
     reddit_read_only = praw.Reddit( client_id="ZpDGr5jljWBSF4iSFRHwoQ",         # your client id
