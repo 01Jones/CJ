@@ -32,7 +32,7 @@ if option == 'Home':
     st.text(" ")
     st.markdown("""---""")
     st.text(" ")
-    st.text(" Index | Valuations Models, Performance Visualization Models, Digital Asset Tracker, Comparison Analysis, Framework")
+    st.text(" Index | Valuations Models, Performance Visualization Models, SEC Document Analysis, Comparison Analysis, Framework")
     st.text(" ")
     st.text(" ")
     st.text(" ")
@@ -73,8 +73,8 @@ if option == 'Valuation Models':
 if option == 'Performance':
     st.header("Economic Indicator Correlation Matrix")
 
-if option == 'Digital Assets':
-    st.header("Digital Assets")
+if option == 'SEC Document Analysis':
+    st.header("SEC EDGAR API")
     
 if option == 'Comparison Analysis':
     st.header("Digital Assets")
@@ -199,7 +199,7 @@ if option == 'Performance' :
 
 #Page 4
 
-if option == 'Digital Assets' :
+if option == 'SEC Document Analysis' :
     st.markdown('''# Wall St.
     ''')
     
@@ -225,6 +225,9 @@ if option == 'Digital Assets' :
     stock = yf.Ticker(tik)
     
     
+    
+    
+    st.write('Quarterly Financials')
     qf = pd.DataFrame(stock.quarterly_financials)
     qf.dropna(inplace=True)
     st.write(qf)
