@@ -227,6 +227,7 @@ if option == 'Digital Assets' :
     
     qf = pd.DataFrame(stock.quarterly_financials)
     qf.dropna(how='all')
+    st.write(qf)
 
     
     st.write('Largest Share Holders')
