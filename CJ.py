@@ -214,8 +214,8 @@ if option == 'Digital Assets' :
     ''')
     
     reddit = praw.Reddit( client_id="ZpDGr5jljWBSF4iSFRHwoQ",         # your client id
-                                client_secret="qFlRpmTL9o9byxG0DC4hCrbXX9kOWA",      # your client secret
-                                user_agent="quoc")        # your user agent
+                          client_secret="qFlRpmTL9o9byxG0DC4hCrbXX9kOWA",      # your client secret
+                          user_agent="quoc")        # your user agent
 
     subreddit = reddit.subreddit("wallstreetbets")
 
