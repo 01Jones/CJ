@@ -213,7 +213,7 @@ if option == 'Digital Assets' :
     st.markdown('''# Wall St.
     ''')
     
-    reddit_read_only = praw.Reddit( client_id="ZpDGr5jljWBSF4iSFRHwoQ",         # your client id
+    reddit = praw.Reddit( client_id="ZpDGr5jljWBSF4iSFRHwoQ",         # your client id
                                 client_secret="qFlRpmTL9o9byxG0DC4hCrbXX9kOWA",      # your client secret
                                 user_agent="quoc")        # your user agent
 
