@@ -222,7 +222,8 @@ if option == 'Digital Assets' :
         cumret = cumret.fillna(0)
         return cumret
     
-    chart = yf.download(AAPL,start,end) 
+    stock = yf.Ticker('tik') 
+    stock.info
     
 
    
