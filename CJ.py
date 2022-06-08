@@ -222,7 +222,7 @@ if option == 'Digital Assets' :
         cumret = cumret.fillna(0)
         return cumret
     
-    df = relativeret(yf.download(AAPL,start,end) ['Adj Close'])
+    chart = relativeret(yf.download(AAPL,start,end) ['Adj Close'])
     
 
    
