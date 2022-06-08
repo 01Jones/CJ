@@ -223,7 +223,11 @@ if option == 'Digital Assets' :
         return cumret
     
     stock = yf.Ticker('tik')
-    
+    stock.hist
+
+
+
+    st.write('Largest Share Holders')
     stock.major_holders
    
     
