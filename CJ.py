@@ -207,10 +207,18 @@ if option == 'Digital Assets' :
     dl = Downloader("/Users/quoc/Downloads/")
     
     tik = st.text_input('Company Ticker', 'AAPL')
-    dl.get("10-K", "tik", amount=5)
-    dl.get("10-Q", "tik", amount=40)
-    dl.get("8-K", "tik", amount=5)
+    dl.get("10-K", tik, amount=5)
+    dl.get("10-Q", tik, amount=40)
+    dl.get("8-K", tik, amount=5)
     
+    
+    def relativeret(df):
+        rel = df.pct_change()
+        cumret = (1+rel).cumprod() - 1
+        cumret = cumret.fillna(0)
+        return cumret
+    
+    df = relativeret(yf.download(tik,start,end) ['Adj Close'])
     
 
    
