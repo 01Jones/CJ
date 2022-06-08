@@ -218,7 +218,7 @@ if option == 'Digital Assets' :
         cumret = cumret.fillna(0)
         return cumret
     
-    df = relativeret(yf.download('tik',start,end) ['Adj Close'])
+    df = relativeret(yf.download(tik,start,end) ['Adj Close'])
     
 
    
