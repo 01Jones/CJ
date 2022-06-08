@@ -141,6 +141,7 @@ if option == 'Valuation Models':
     
 
 #Page 3
+
 if option == 'Performance' :
     st.markdown("""---""")
     st.text("")
@@ -189,20 +190,7 @@ if option == 'Performance' :
     
     
     
-    
-    
-    
-   
-    
-        
-
-    
-    
-    
-    
-    
-        
-     
+  
     
 
     
@@ -210,6 +198,7 @@ if option == 'Performance' :
 
 
 #Page 4
+
 if option == 'Digital Assets' :
     st.markdown('''# Wall St.
     ''')
@@ -217,8 +206,12 @@ if option == 'Digital Assets' :
     from sec_edgar_downloader import Downloader
     dl = Downloader("/Users/quoc/Downloads/")
     
-    tik = st.text_input('Input Ticker', 'AAPL')
-    dl.get("10-K", "tik")
+    tik = st.text_input('Company Ticker', 'AAPL')
+    dl.get("10-K", "tik", amount=5)
+    dl.get("40-Q", "tik", amount=5)
+    dl.get("8-K", "tik", amount=5)
+    
+    
 
    
 
