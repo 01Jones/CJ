@@ -226,7 +226,7 @@ if option == 'Digital Assets' :
     
     
     qf = pd.DataFrame(stock.quarterly_financials)
-    qf.dropna(how='all')
+    qf.dropna
     st.write(qf)
 
     
