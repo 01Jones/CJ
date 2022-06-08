@@ -222,7 +222,7 @@ if option == 'Digital Assets' :
         cumret = cumret.fillna(0)
         return cumret
     
-    hold = tik.major_holders
+    hold = yf.major_holders('tik')
    
     
 
