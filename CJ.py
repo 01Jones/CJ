@@ -212,13 +212,17 @@ if option == 'Digital Assets' :
     dl.get("8-K", 'tik', amount=5)
     
     
+    
+    
+    start = st.date_input('Start', value = pd.to_datetime('2021-01-01'))
+    end = st.date_input('End',value = pd.to_datetime('today'))
     def relativeret(df):
         rel = df.pct_change()
         cumret = (1+rel).cumprod() - 1
         cumret = cumret.fillna(0)
         return cumret
     
-    df = relativeret(yf.download(tik,start,end) ['Adj Close'])
+    df = relativeret(yf.download(AAPL,start,end) ['Adj Close'])
     
 
    
