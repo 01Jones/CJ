@@ -213,8 +213,14 @@ if option == 'Performance' :
 if option == 'Digital Assets' :
     st.markdown('''# Wall St.
     ''')
+    
+    from sec_edgar_downloader import Downloader
+    dl = Downloader("/Users/quoc/Downloads/")
+    
     tik = st.text_input('Input Ticker', 'AAPL')
+    dl.get("10-K", "tik")
 
+   
 
     
 
