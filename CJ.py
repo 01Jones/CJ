@@ -21,7 +21,7 @@ from sec_edgar_downloader import Downloader
 #Home Page
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'Digital Assets', 'Comparison Analysis', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'SEC Document Analysis', 'Comparison Analysis', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
