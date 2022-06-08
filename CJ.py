@@ -214,8 +214,8 @@ if option == 'Digital Assets' :
     
     
     
-    start = st.date_input('Start', value = pd.to_datetime('2021-01-01'))
-    end = st.date_input('End',value = pd.to_datetime('today'))
+    start = pd.to_datetime('2018-01-01')
+    end = pd.to_datetime('today')
     def relativeret(df):
         rel = df.pct_change()
         cumret = (1+rel).cumprod() - 1
