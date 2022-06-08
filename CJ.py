@@ -207,11 +207,13 @@ if option == 'SEC Document Analysis' :
     dl = Downloader("/Users/quoc/Downloads/")
     
     tik = st.text_input('Company Ticker', 'AAPL')
-    dl.get("10-K", 'tik', amount=5)
+    
+    
+    tenk = dl.get("10-K", 'tik', amount=5)
     dl.get("10-Q", 'tik', amount=40)
     dl.get("8-K", 'tik', amount=5)
     
-    
+    st.write(tenk)
     
     
     start = pd.to_datetime('2018-01-01')
@@ -222,17 +224,15 @@ if option == 'SEC Document Analysis' :
         cumret = cumret.fillna(0)
         return cumret
     
+    
+    
+    
     stock = yf.Ticker(tik)
-    
-    
-    
     
     st.write('Quarterly Financials')
     qf = pd.DataFrame(stock.quarterly_financials)
     qf.dropna(inplace=True)
     st.write(qf)
-    ebit = qf['Ebit']
-    st.line_chart(ebit)
 
     
     st.write('Largest Share Holders')
