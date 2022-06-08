@@ -15,8 +15,7 @@ import pydeck as pdk
 import statsmodels.api as sm
 import nasdaqdatalink
 #KtkauE_-pic1EFrCBFb4
-import praw
-
+from sec_edgar_downloader import Downloader
 # Home Page
 
 # Sidebar dropdown 
