@@ -231,6 +231,8 @@ if option == 'SEC Document Analysis' :
     qf = pd.DataFrame(stock.quarterly_financials)
     qf.dropna(inplace=True)
     st.write(qf)
+    
+    st.line_chart(qf['Ebit'])
 
     
     st.write('Largest Share Holders')
