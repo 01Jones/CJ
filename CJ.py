@@ -234,7 +234,7 @@ if option == 'Digital Assets' :
 
     for post in posts:
     # Title of each post
-       posts_dict["Title"].append(post.title)
+      posts_dict["Title"].append(post.title)
 
     # Text inside a post
       posts_dict["Post Text"].append(post.selftext)
