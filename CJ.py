@@ -225,8 +225,8 @@ if option == 'Digital Assets' :
     stock = yf.Ticker(tik)
     
     
-    qf = stock.quarterly_financials
-    qf = pd.DataFrame
+    qf = pd.DataFrame(stock.quarterly_financials)
+    qf.dropna(how='all')
 
     
     st.write('Largest Share Holders')
