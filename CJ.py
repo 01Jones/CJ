@@ -232,7 +232,7 @@ if option == 'SEC Document Analysis' :
     qf.dropna(inplace=True)
     st.write(qf)
     
-    st.line_chart(qf['Ebit'])
+    st.line_chart(qf)
 
     
     st.write('Largest Share Holders')
