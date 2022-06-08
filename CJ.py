@@ -217,11 +217,11 @@ if option == 'Digital Assets' :
                                 client_secret="qFlRpmTL9o9byxG0DC4hCrbXX9kOWA",      # your client secret
                                 user_agent="quoc")        # your user agent
 
-    #subreddit = reddit_read_only.subreddit("wallstreetbets")
+    subreddit = reddit_read_only.subreddit("wallstreetbets")
 
     for post in subreddit.hot(limit=5):
-       print(post.title)
-       print()
+       st.write(post.title)
+    
 
 
     posts = subreddit.top("day")
