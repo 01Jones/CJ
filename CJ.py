@@ -203,7 +203,7 @@ if option == 'SEC Document Analysis' :
     st.markdown('''
     ''')
     st.subheader('Company Filings, Risks, Insights')
-    tik = TSLA
+    tik = 'TSLA'
     st.text_input('10k Filling', 'https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm')
     
     st.subheader('Recent 10k Filings')
