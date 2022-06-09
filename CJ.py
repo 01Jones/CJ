@@ -203,7 +203,8 @@ if option == 'SEC Document Analysis' :
     st.markdown('''
     ''')
     st.subheader('Company Filings, Risks, Insights')
-    tik = st.text_input('Company Ticker', 'AAPL')
+    tik = TSLA
+    st.text_input('10k Filling', 'https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm')
     
     st.subheader('Recent 10k Filings')
     
@@ -217,14 +218,17 @@ if option == 'SEC Document Analysis' :
     extractorApi = ExtractorApi("9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
     queryApi = QueryApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
     fullTextSearchApi = FullTextSearchApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
-
+    
+    
     filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm"
-    section_text = extractorApi.get_section(filing_url, "1A", "text")
-    st.subheader('Risks')
-    st.write(section_text)
+   
     sums = extractorApi.get_section(filing_url, "1", "text")
     st.subheader('Summary')
     st.write(sums)
+    
+    section_text = extractorApi.get_section(filing_url, "1A", "text")
+    st.subheader('Risks')
+    st.write(section_text)
     
 
     
