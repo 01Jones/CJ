@@ -209,9 +209,9 @@ if option == 'Company Insights' :
     
     tik = 'TSLA'
     st.text_input('10k Filling', 'https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm')
-    
+    st.markdown("""---""")
     st.subheader('Recent 10k Filings')
-    
+     st.markdown("""---""")
     start = pd.to_datetime('2018-01-01')
     end = pd.to_datetime('today')
     
@@ -230,6 +230,7 @@ if option == 'Company Insights' :
     st.subheader('Summary')
     with st.expander("Open :  Company Overview & Summary"):
      st.write(sums)
+     st.markdown("""---""")
     
     
     
