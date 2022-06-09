@@ -170,8 +170,7 @@ if option == 'Performance' :
     
     gdpcpi = pd.merge(gdp, un, left_index = True, right_index = True)
     econ = pd.merge(cir, cpi, left_index = True, right_index = True)
-    econ = pd.DataFrame
-    
+    econ = pd.DataFrame(index=[date])
     
     st.text('Gross Domestic Product') 
     st.line_chart(gdpcpi)
