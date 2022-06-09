@@ -200,9 +200,9 @@ if option == 'Performance' :
 #Page 4
 
 if option == 'SEC Document Analysis' :
-    st.markdown('''# Wall St.
+    st.markdown('''
     ''')
-    
+    st.subheader('Company Filings, Risks, Insights')
     tik = st.text_input('Company Ticker', 'AAPL')
     
     st.subheader('Recent 8k Filings')
@@ -221,6 +221,9 @@ if option == 'SEC Document Analysis' :
     filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm"
     section_text = extractorApi.get_section(filing_url, "1A", "text")
     st.write(section_text)
+    sums = extractorApi.get_section(filing_url, "16", "text")
+    st.write(sums)
+    
 
     
     
