@@ -228,7 +228,7 @@ if option == 'SEC Document Analysis' :
    
     sums = extractorApi.get_section(filing_url, "1", "text")
     st.subheader('Summary')
-    st.text(sums)
+    st.write(sums)
     
     risk = extractorApi.get_section(filing_url, "1A", "text")
     st.subheader('Risks')
