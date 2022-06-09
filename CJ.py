@@ -205,7 +205,7 @@ if option == 'SEC Document Analysis' :
     st.subheader('Company Filings, Risks, Insights')
     tik = st.text_input('Company Ticker', 'AAPL')
     
-    st.subheader('Recent 8k Filings')
+    st.subheader('Recent 10k Filings')
     
     start = pd.to_datetime('2018-01-01')
     end = pd.to_datetime('today')
@@ -220,8 +220,10 @@ if option == 'SEC Document Analysis' :
 
     filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm"
     section_text = extractorApi.get_section(filing_url, "1A", "text")
+    st.subheader('Risks')
     st.write(section_text)
     sums = extractorApi.get_section(filing_url, "16", "text")
+    st.subheader('Summary')
     st.write(sums)
     
 
