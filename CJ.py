@@ -204,9 +204,9 @@ if option == 'Company Insights' :
     ''')
     st.subheader('Company Filings, Risks, Insights')
     st.markdown("""---""")
-    
+    st.text(' ')
     st.subheader('Recent 10k Filings')
-    st.text_input('10k Filling', 'https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm')
+    st.text_input('10k Filling Input', 'https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm')
     st.markdown("""---""")
     
   
@@ -229,7 +229,7 @@ if option == 'Company Insights' :
     st.subheader('Summary')
     with st.expander("Open :  Company Overview & Summary"):
      st.write(sums)
-     st.markdown("""---""")
+    st.markdown("""---""")
     
     
     
