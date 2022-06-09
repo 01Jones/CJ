@@ -228,7 +228,7 @@ if option == 'Company Insights' :
    
     sums = extractorApi.get_section(filing_url, "1", "text")
     st.subheader('Summary')
-    st.write(sums.header)
+    st.write(sums)
     
     risk = extractorApi.get_section(filing_url, "1A", "text")
     st.subheader('Risks')
