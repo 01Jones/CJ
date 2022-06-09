@@ -170,8 +170,7 @@ if option == 'Performance' :
     
     gdpcpi = pd.merge(gdp, un, left_index = True, right_index = True)
     econ = pd.merge(cir, cpi, left_index = True, right_index = True)
-    econ = pd.DataFrame(data=cpi,cir)
-    
+   
     st.text('Gross Domestic Product') 
     st.line_chart(gdpcpi)
     st.write(gdpcpi.tail())   
@@ -181,6 +180,7 @@ if option == 'Performance' :
    
     
     st.text('Currency in Circulation | Unemployment')
+    st.line_chart(econ)
 
     st.write(econ)
     
