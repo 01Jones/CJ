@@ -182,7 +182,7 @@ if option == 'Performance' :
    
     
     st.text('Currency in Circulation | Unemployment')
-    st.area_chart(econ)
+    st.line_chart(econ)
     st.write(econ)
     
    
