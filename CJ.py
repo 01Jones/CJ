@@ -205,7 +205,7 @@ if option == 'SEC Document Analysis' :
     
     tik = st.text_input('Company Ticker', 'AAPL')
     
-    st.subheader('tik', 'Recent 8k Filings')
+    st.subheader('Recent 8k Filings')
     
     start = pd.to_datetime('2018-01-01')
     end = pd.to_datetime('today')
