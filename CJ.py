@@ -74,7 +74,7 @@ if option == 'Performance':
     st.header("Economic Indicator Correlation Matrix")
 
 if option == 'Company Insights':
-    st.header("SEC EDGAR API")
+    st.header("SEC Document Analysis | EDGAR API")
     
 if option == 'Comparison Analysis':
     st.header("Digital Assets")
