@@ -221,7 +221,7 @@ if option == 'SEC Document Analysis' :
       "sort": [{ "filedAt": { "order": "desc" } }]
     }
 
-filings = queryApi.get_filings(query)
+    filings = queryApi.get_filings(query)
 
     st.write(filings)
     
