@@ -264,8 +264,9 @@ if option == 'Company Insights' :
     qf = pd.DataFrame(stock.quarterly_financials)
     qf.dropna(inplace=True)
     st.write(qf)
-
     
+      st.markdown("""---""")
+
     st.write('Largest Share Holders')
     stock.major_holders
    
