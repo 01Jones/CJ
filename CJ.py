@@ -170,7 +170,7 @@ if option == 'Performance' :
     
     gdpcpi = pd.merge(gdp, un, left_index = True, right_index = True)
     econ = pd.merge(cir, cpi, left_index = True, right_index = True)
-    
+    econ = pd.DataFrame
     
     
     st.text('Gross Domestic Product') 
