@@ -228,9 +228,7 @@ if option == 'Company Insights' :
    
     sums = extractorApi.get_section(filing_url, "1", "text")
     st.subheader('Summary')
-    
-    
-    with st.expander("See explanation"):
+    with st.expander("Company Overview & Summary"):
      st.write(sums)
     
     
@@ -239,7 +237,8 @@ if option == 'Company Insights' :
     st.subheader('Risks')
     riskcount = risk.count(' ')
     st.metric(label="Risk Factors Count", value=riskcount, delta='1.2 %')
-    st.write(risk)
+    with st.expander("Company 10k Risks"):
+     st.write(risk)
     
 
     
