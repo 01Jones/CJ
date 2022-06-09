@@ -21,7 +21,7 @@ from sec_api import QueryApi
 #Home Page
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'SEC Document Analysis', 'Comparison Analysis', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'Company Insights', 'Comparison Analysis', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
@@ -73,7 +73,7 @@ if option == 'Valuation Models':
 if option == 'Performance':
     st.header("Economic Indicator Correlation Matrix")
 
-if option == 'SEC Document Analysis':
+if option == 'Company Insights':
     st.header("SEC EDGAR API")
     
 if option == 'Comparison Analysis':
@@ -199,7 +199,7 @@ if option == 'Performance' :
 
 #Page 4
 
-if option == 'SEC Document Analysis' :
+if option == 'Company Insights' :
     st.markdown('''
     ''')
     st.subheader('Company Filings, Risks, Insights')
