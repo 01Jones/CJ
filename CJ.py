@@ -228,7 +228,7 @@ if option == 'Company Insights' :
    
     sums = extractorApi.get_section(filing_url, "1", "text")
     st.subheader('Summary')
-    st.write(sums)
+    
     
     with st.expander("See explanation"):
      st.write(sums)
