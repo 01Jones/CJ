@@ -220,7 +220,7 @@ if option == 'SEC Document Analysis' :
 
     filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm"
     section_text = extractorApi.get_section(filing_url, "1A", "text")
-    ection_html = extractorApi.get_section(filing_url, "7", "html")
+    section_html = extractorApi.get_section(filing_url, "7", "html")
     st.write(section_text)
     st.write(section_html)
     
