@@ -210,20 +210,19 @@ if option == 'SEC Document Analysis' :
     start = pd.to_datetime('2018-01-01')
     end = pd.to_datetime('today')
     
+    from sec_api import QueryApi
+    from sec_api import FullTextSearchApi
+    from sec_api import ExtractorApi
+
+    extractorApi = ExtractorApi("9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
     queryApi = QueryApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
+    fullTextSearchApi = FullTextSearchApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
 
-    query = {
-      "query": { "query_string": { 
-          "query": "formType:\"8-K\" AND description:\"9.01\""
-        } },
-      "from": "0",
-      "size": "10",
-      "sort": [{ "filedAt": { "order": "desc" } }]
-    }
-
-    filings = queryApi.get_filings(query)
-
-    st.write(filings)
+    filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm"
+    section_text = extractorApi.get_section(filing_url, "1A", "text")
+    ection_html = extractorApi.get_section(filing_url, "7", "html")
+    print(section_text)
+    print(section_html)
     
     
     start = pd.to_datetime('2018-01-01')
