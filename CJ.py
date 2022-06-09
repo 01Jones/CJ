@@ -181,7 +181,8 @@ if option == 'Performance' :
     st.markdown("""---""")
    
     
-    st.text('Currency in Circulation | Unemployment')        
+    st.text('Currency in Circulation | Unemployment')
+    st.area_chart(econ)
     st.write(econ)
     
    
