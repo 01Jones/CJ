@@ -223,7 +223,7 @@ if option == 'SEC Document Analysis' :
 
     filings = queryApi.get_filings(query)
 
-    print(filings)
+    st.write(filings)
     
     
     start = pd.to_datetime('2018-01-01')
