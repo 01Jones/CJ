@@ -15,7 +15,7 @@ import pydeck as pdk
 import statsmodels.api as sm
 import nasdaqdatalink
 #KtkauE_-pic1EFrCBFb4
-from sec_edgar_downloader import Downloader
+from sec_api import QueryApi
 
 
 #Home Page
@@ -203,17 +203,27 @@ if option == 'SEC Document Analysis' :
     st.markdown('''# Wall St.
     ''')
     
-    from sec_edgar_downloader import Downloader
-    dl = Downloader("/Users/quoc/Downloads/")
-    
     tik = st.text_input('Company Ticker', 'AAPL')
     
     
-    tenk = dl.get("10-K", 'tik', amount=5)
-    dl.get("10-Q", 'tik', amount=40)
-    dl.get("8-K", 'tik', amount=5)
     
-    st.write(tenk)
+    start = pd.to_datetime('2018-01-01')
+    end = pd.to_datetime('today')
+    
+    queryApi = QueryApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
+
+    query = {
+      "query": { "query_string": { 
+          "query": "ticker:TSLA AND filedAt:{2020-01-01 TO 2020-12-31} AND formType:\"10-Q\"" 
+        } },
+      "from": "0",
+      "size": "10",
+      "sort": [{ "filedAt": { "order": "desc" } }]
+    }
+
+    filings = queryApi.get_filings(query)
+
+    print(filings)
     
     
     start = pd.to_datetime('2018-01-01')
