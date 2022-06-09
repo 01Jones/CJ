@@ -206,11 +206,10 @@ if option == 'Company Insights' :
     st.markdown('''
     ''')
     
-    
-    tik = 'TSLA'
+    st.subheader('Recent 10k Filings')
     st.text_input('10k Filling', 'https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm')
     st.markdown("""---""")
-    st.subheader('Recent 10k Filings')
+    
     st.markdown("""---""")
     start = pd.to_datetime('2018-01-01')
     end = pd.to_datetime('today')
@@ -218,6 +217,7 @@ if option == 'Company Insights' :
     from sec_api import QueryApi
     from sec_api import FullTextSearchApi
     from sec_api import ExtractorApi
+    tik = 'TSLA'
 
     extractorApi = ExtractorApi("9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
     queryApi = QueryApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
