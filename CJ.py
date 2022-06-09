@@ -214,14 +214,14 @@ if option == 'SEC Document Analysis' :
 
     query = {
       "query": { "query_string": { 
-          "query": "ticker:TSLA AND filedAt:{2020-01-01 TO 2020-12-31} AND formType:\"10-Q\"" 
+          "query": "formType:\"8-K\" AND description:\"9.01\""
         } },
       "from": "0",
       "size": "10",
       "sort": [{ "filedAt": { "order": "desc" } }]
     }
 
-    filings = queryApi.get_filings(query)
+filings = queryApi.get_filings(query)
 
     st.write(filings)
     
