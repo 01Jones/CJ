@@ -265,7 +265,7 @@ if option == 'Company Insights' :
     qf.dropna(inplace=True)
     st.write(qf)
     
-      st.markdown("""---""")
+    st.markdown("""---""")
 
     st.write('Largest Share Holders')
     stock.major_holders
