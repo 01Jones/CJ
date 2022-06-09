@@ -233,7 +233,7 @@ if option == 'Company Insights' :
     risk = extractorApi.get_section(filing_url, "1A", "text")
     st.subheader('Risks')
     riskcount = risk.count(' ')
-    st.metric(label="Risk Count", value=riskcount, delta=1.2 %)
+    st.metric(label="Risk Count", value=riskcount, delta='1.2 %')
     st.write(risk)
     
 
