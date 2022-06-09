@@ -230,8 +230,7 @@ if option == 'Company Insights' :
     with st.expander("Open :  Company Overview & Summary"):
      st.write(sums)
     st.markdown("""---""")
-    
-    
+  
     
     risk = extractorApi.get_section(filing_url, "1A", "text")
     st.subheader('Risks')
@@ -239,6 +238,11 @@ if option == 'Company Insights' :
     st.metric(label="Risk Factors Count", value=riskcount, delta='1.2 %')
     with st.expander("Open :  Company 10k Risks"):
      st.write(risk)
+    
+    
+    st.markdown("""---""")
+    st.text(' ')
+        
     
 
     
