@@ -206,7 +206,7 @@ if option == 'Company Insights' :
     st.markdown("""---""")
     st.text(' ')
     st.subheader('Recent 10k Filings')
-    filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm"
+    filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000095017022000796/tsla-20211231.htm"
     st.text_input('10k Filing Input', filing_url)
     st.markdown("""---""")
     
