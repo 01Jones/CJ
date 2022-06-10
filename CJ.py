@@ -206,7 +206,8 @@ if option == 'Company Insights' :
     st.markdown("""---""")
     st.text(' ')
     st.subheader('Recent 10k Filings')
-    st.text_input('10k Filling Input', 'https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm')
+    filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm"
+    st.text_input('10k Filling Input', 'filing_url')
     st.markdown("""---""")
     
   
@@ -223,7 +224,6 @@ if option == 'Company Insights' :
     fullTextSearchApi = FullTextSearchApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
     
     
-    filing_url = "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm"
    
     sums = extractorApi.get_section(filing_url, "1", "text")
     st.subheader('Summary')
