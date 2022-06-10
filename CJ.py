@@ -219,7 +219,7 @@ if option == 'Company Insights' :
     from sec_api import ExtractorApi
     tik = 'TSLA'
 
-    extractorApi = (ExtractorApi"9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
+    extractorApi = ExtractorApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
     queryApi = QueryApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
     fullTextSearchApi = FullTextSearchApi(api_key="9ffde2c3d9f7c1836fb1672e5916111d57e1cfc7e733e3b8f009e04d5fdcd9a0")
     
