@@ -21,13 +21,13 @@ from sec_api import QueryApi
 #Home Page
 
 # Sidebar dropdown 
-option = st.sidebar.selectbox("Dashboard", ('Home', 'Valuation Models', 'Performance', 'Company Insights', 'Comparison Analysis', 'Framework')) 
+option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic Insights', 'Valuation Models', 'Performance', 'Company Insights', 'Comparison Analysis', 'Framework')) 
 
 #Title & Header
 if option == 'Home':
-    st.title("Collin Jones")
+    st.title("Home")
     st.header("Data Analytics In Finance")
-    st.text("Final Project")
+    st.text("Overview")
     st.text("  Navigation With Left Dashboard | Framework & Source Code On 'Framework' Page")
     st.text(" ")
     st.markdown("""---""")
@@ -67,6 +67,9 @@ if option == 'Home':
 
 #pages
 
+if option == 'Economic Insights':
+    st.header("Valuation Models")
+
 if option == 'Valuation Models':
     st.header("Valuation Models")
     
@@ -87,6 +90,10 @@ if option == 'Framework':
 
     
     
+ #Page 1
+
+if option == 'Economic Insights':
+    st.markdown("""---""")
     
     
     
