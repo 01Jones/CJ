@@ -69,7 +69,7 @@ if option == 'Home':
 #pages
 
 if option == 'Economic Insights':
-    st.header("Valuation Models")
+    st.header("Overview")
 
 if option == 'Valuation Models':
     st.header("Valuation Models")
