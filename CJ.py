@@ -91,7 +91,7 @@ if option == 'Framework':
 
     
     
- #Page 1
+ #Page 1 --------------
 
 if option == 'Economic Insights':
     st.markdown("""---""")
@@ -99,6 +99,12 @@ if option == 'Economic Insights':
     
     
 
+    
+    
+    
+    
+    
+    
 #Page 2
 
 if option == 'Valuation Models':
