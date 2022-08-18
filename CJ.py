@@ -14,10 +14,11 @@ import datetime as dt
 import pydeck as pdk
 import statsmodels.api as sm
 import nasdaqdatalink
-#KtkauE_-pic1EFrCBFb4
 from sec_api import QueryApi
 
-
+# fred API 49dc69fb7e224d27e8cd2f5b4830ac9f
+# Nasdaq API KtkauE_-pic1EFrCBFb4
+# KtkauE_-pic1EFrCBFb4
 #Home Page
 
 # Sidebar dropdown 
@@ -32,7 +33,7 @@ if option == 'Home':
     st.text(" ")
     st.markdown("""---""")
     st.text(" ")
-    st.text(" Index | Valuations Models, Performance Visualization Models, SEC Document Analysis, Comparison Analysis, Framework")
+    st.text(" Index | Economic Insights, Valuations Models, Performance Visualization Models, SEC Document Analysis, Comparison Analysis, Framework")
     st.text(" ")
     st.text(" ")
     st.text(" ")
