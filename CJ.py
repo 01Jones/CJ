@@ -29,9 +29,9 @@ if option == 'Home':
     st.header('C. Jones')
     
     st.subheader("Overview")
-    st.write("Navigation With Left Dashboard")
     st.write(" ")
     st.markdown("""---""")
+    st.write("Navigation With Left Dashboard")
     st.write(" ")
     st.write(" Index | Economic Insights, Valuations Models, Performance Visualization Models, SEC Document Analysis, Comparison Analysis, Framework")
     st.write(" ")
