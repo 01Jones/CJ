@@ -29,7 +29,7 @@ if option == 'Home':
     st.header('C. Jones')
     
     st.header("Overview")
-    st.text("Navigation With Left Dashboard")
+    st.write("Navigation With Left Dashboard")
     st.text(" ")
     st.markdown("""---""")
     st.text(" ")
