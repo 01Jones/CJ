@@ -30,7 +30,7 @@ if option == 'Home':
     
     st.header("Overview")
     st.write("Navigation With Left Dashboard")
-    st.text(" ")
+    st.write(" ")
     st.markdown("""---""")
     st.text(" ")
     st.text(" Index | Economic Insights, Valuations Models, Performance Visualization Models, SEC Document Analysis, Comparison Analysis, Framework")
