@@ -96,6 +96,13 @@ if option == 'Framework':
 if option == 'Economic Insights':
     st.markdown("""---""")
     
+    start = pd.to_datetime('2010-01-01')
+    end = pd.to_datetime('today')
+    
+    fund = fred.get_series('FEDFUNDS', observation_start=start, observation_end=end)
+    
+    st.line_chart(fund)
+    
     
     
 
