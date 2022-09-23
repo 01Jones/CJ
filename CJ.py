@@ -97,7 +97,7 @@ if option == 'Economic Insights':
     st.markdown("""---""")
     
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
-    start = pd.to_datetime('2010-01-01')
+    start = pd.to_datetime('2000-01-01')
     end = pd.to_datetime('today')
     
     fund = fred.get_series('FEDFUNDS', start, end)
