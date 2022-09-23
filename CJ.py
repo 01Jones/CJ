@@ -101,8 +101,9 @@ if option == 'Economic Insights':
     end = pd.to_datetime('today')
     
     fund = fred.get_series('FEDFUNDS', start, end)
-    st.subheader('Federal Funds Effective Rate')
-    st.line_chart(fund)
+    un = fred.get_series('UNRATE', start, end)
+    st.subheader('Federal Funds Effective Rate & Un')
+    st.line_chart(fund, un)
     st.write(fund.tail())
     
     
