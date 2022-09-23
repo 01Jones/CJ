@@ -32,11 +32,11 @@ if option == 'Home':
     st.write("Navigation With Left Dashboard")
     st.write(" ")
     st.markdown("""---""")
-    st.text(" ")
-    st.text(" Index | Economic Insights, Valuations Models, Performance Visualization Models, SEC Document Analysis, Comparison Analysis, Framework")
-    st.text(" ")
-    st.text(" ")
-    st.text(" ")
+    st.write(" ")
+    st.write(" Index | Economic Insights, Valuations Models, Performance Visualization Models, SEC Document Analysis, Comparison Analysis, Framework")
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
     
     #weather
     api_key = "54c08ecafc87e0166d56037c1fdaa23a"
