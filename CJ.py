@@ -103,9 +103,10 @@ if option == 'Economic Insights':
     fund = fred.get_series('FEDFUNDS', start, end)
     un = fred.get_series('UNRATE', start, end)
     st.subheader('Federal Funds Effective Rate & Un')
-    fe = pd.merge(fund, un, left_index = True, right_index = True)
-    st.line_chart(fe)
+    
+    st.line_chart(fund)
     st.write(fund.tail())
+    st.write(un.tail())
     
     
     
