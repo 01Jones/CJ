@@ -26,10 +26,10 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic Insights', 'Valuat
 
 #Title & Header
 if option == 'Home':
-    st.title(" C Jones ")
+    st.title("C Jones")
     st.header("")
     st.text("Overview")
-    st.text("  Navigation With Left Dashboard ")
+    st.text("Navigation With Left Dashboard ")
     st.text(" ")
     st.markdown("""---""")
     st.text(" ")
@@ -101,7 +101,7 @@ if option == 'Economic Insights':
     end = pd.to_datetime('today')
     
     fund = fred.get_series('FEDFUNDS', start, end)
-    st.text(' Federal Funds Effective Rate ')
+    st.text("Federal Funds Effective Rate")
     st.line_chart(fund)
     
     
