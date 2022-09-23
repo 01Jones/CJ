@@ -28,7 +28,7 @@ option = st.sidebar.selectbox("Dashboard", ('Home', 'Economic Insights', 'Valuat
 if option == 'Home':
     st.header('C. Jones')
     
-    st.header("Overview")
+    st.subheader("Overview")
     st.write("Navigation With Left Dashboard")
     st.write(" ")
     st.markdown("""---""")
