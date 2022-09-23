@@ -103,6 +103,7 @@ if option == 'Economic Insights':
     fund = fred.get_series('FEDFUNDS', start, end)
     st.subheader('Federal Funds Effective Rate')
     st.line_chart(fund)
+    st.write(fund.tail())
     
     
     
