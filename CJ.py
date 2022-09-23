@@ -99,7 +99,7 @@ if option == 'Economic Insights':
     start = pd.to_datetime('2010-01-01')
     end = pd.to_datetime('today')
     
-    fund = fred.get_series('FEDFUNDS', observation_start=start, observation_end=end)
+    fund = fred.get_series('FEDFUNDS', start, end)
     
     st.line_chart(fund)
     
