@@ -106,6 +106,7 @@ if option == 'Economic Insights':
     
     st.line_chart(fund)
     st.write(fund.tail())
+    st.line_chart(un)
     st.write(un.tail())
     
     
