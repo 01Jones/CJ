@@ -104,7 +104,7 @@ if option == 'Economic Insights':
     un = fred.get_series('UNRATE', start, end)
     
     st.subheader('Economic KPIs')
-    st.markdown("""---""")
+    st.markdown("")
     st.write('Federal Funds Effective Rate & Un')
     st.line_chart(fund)
     st.write('Unemployment Rate')
@@ -125,7 +125,7 @@ if option == 'Economic Insights':
 
 if option == 'Valuation Models':
     st.markdown("""---""")
-    st.text("")
+    st.write("")
     st.subheader('Capital Asset Pricing Model')
     
     
@@ -139,9 +139,9 @@ if option == 'Valuation Models':
     
     st.markdown("""---""")
     st.subheader("Simple Discounted Cash Flow Analysis")
-    st.text("")
+    st.write("")
     
-    st.text("Projcted Yearly Free Cash Flow")
+    st.write("Projcted Yearly Free Cash Flow")
     a0, a1, a2, = st.columns(3)
     a3, a4, a5, = st.columns(3)
     y0 = a0.number_input('Initial Investment', None, None, 100)
