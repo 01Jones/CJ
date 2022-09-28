@@ -104,6 +104,7 @@ if option == 'Economic Insights':
     un = fred.get_series('UNRATE', start, end)
     
     st.subheader('Economic KPIs')
+    st.markdown("""---""")
     st.write('Federal Funds Effective Rate & Un')
     st.line_chart(fund)
     st.write('Unemployment Rate')
