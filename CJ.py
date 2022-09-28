@@ -174,7 +174,7 @@ if option == 'Valuation Models':
 
 if option == 'Performance' :
     st.markdown("""---""")
-    st.text("")
+    st.write("")
     
     fred = Fred(api_key='49dc69fb7e224d27e8cd2f5b4830ac9f')
     nasdaqdatalink.ApiConfig.api_key = "KtkauE_-pic1EFrCBFb4"
@@ -201,7 +201,7 @@ if option == 'Performance' :
     gdpcpi = pd.merge(gdp, un, left_index = True, right_index = True)
     econ = pd.merge(cir, cpi, left_index = True, right_index = True)
    
-    st.text('Gross Domestic Product') 
+    st.write('Gross Domestic Product') 
     st.line_chart(gdpcpi)
     st.write(gdpcpi.tail())   
     
@@ -209,7 +209,7 @@ if option == 'Performance' :
     st.markdown("""---""")
    
     
-    st.text('Currency in Circulation | Unemployment')
+    st.write('Currency in Circulation | Unemployment')
     st.line_chart(econ)
 
     st.write(econ)
