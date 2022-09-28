@@ -102,8 +102,9 @@ if option == 'Economic Insights':
     
     fund = fred.get_series('FEDFUNDS', start, end)
     un = fred.get_series('UNRATE', start, end)
-    st.subheader('Federal Funds Effective Rate & Un')
     
+    st.subheader('Economic KPIs')
+    st.write('Federal Funds Effective Rate & Un')
     st.line_chart(fund)
     st.write('Unemployment Rate')
     st.line_chart(un)
