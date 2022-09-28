@@ -105,6 +105,7 @@ if option == 'Economic Insights':
     st.subheader('Federal Funds Effective Rate & Un')
     
     st.line_chart(fund)
+    st.write('Unemployment Rate')
     st.line_chart(un)
     st.write(fund.tail())
     st.write(un.tail())
