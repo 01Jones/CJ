@@ -105,14 +105,14 @@ if option == 'Economic Insights':
     
     st.subheader('Economic KPIs')
     st.markdown("")
-    st.write('Federal Funds Effective Rate & Un')
-    st.line_chart(fund)
+    st.write('Federal Funds Effective Rate & Unemployment Rate')
     
    
     fund.name = 'Federal Funds Effective Rate'
     un.name = 'Unemployment Rate'
     econ = pd.merge(fund, un, left_index = True, right_index = True)
-    
+    st.line_chart(econ)
+    st.write(econ.tail())
     
 
     
