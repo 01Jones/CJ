@@ -114,6 +114,13 @@ if option == 'Economic Insights':
     st.line_chart(econ)
     st.write(econ.tail())
     
+    
+    cpe = fred.get_series('PCEPILFE', start, end)
+    st.line_chart(cpe)
+    st.write(cpe.tail())
+    
+    
+    
 
     
     
