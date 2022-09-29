@@ -116,7 +116,10 @@ if option == 'Economic Insights':
     
     
     cpi = fred.get_series('CPIAUCSL', start, end)
-    return (cpi(current - previous) / current ) * 100.0
+    rcpi = cpi.pct_change()
+   
+    
+    
     st.line_chart(cpi)
     st.write(cpi.tail())
     
