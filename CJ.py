@@ -115,7 +115,7 @@ if option == 'Economic Insights':
     st.write(econ.tail())
     
     
-    cpe = fred.get_series('PCEPILFE', start, end)
+    cpe = fred.get_series('CPIAUCSL', start, end)
     st.line_chart(cpe)
     st.write(cpe.tail())
     
