@@ -116,7 +116,7 @@ if option == 'Economic Insights':
     
     
     cpi = fred.get_series('CPIAUCSL', start, end)
-    rcpi = cpi.pct_change()
+    cpi = cpi.pct_change()
    
     
     
