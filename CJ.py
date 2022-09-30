@@ -65,7 +65,7 @@ if option == 'Home':
          pitch=50)))
     
     #BLS
-    url = https://www.bls.gov/bls/newsrels.htm#latest-releases
+    url = "https://www.bls.gov/bls/newsrels.htm#latest-releases"
     req = requests.get(url)
     st.code(url)
  
