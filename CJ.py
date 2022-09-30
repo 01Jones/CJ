@@ -116,6 +116,8 @@ if option == 'Economic Insights':
     
     
     cpi = fred.get_series('CPIAUCSL', start, end)
+    
+    cpi = cpi.set_index(pd.DatetimeIndex(cpi['date'].values))
     cpi = cpi.pct_change()
    
     
