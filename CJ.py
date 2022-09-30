@@ -63,6 +63,11 @@ if option == 'Home':
          longitude=-87.62,
          zoom=11,
          pitch=50)))
+    
+    #BLS
+    url = https://www.bls.gov/bls/newsrels.htm#latest-releases
+    req = requests.get(url)
+    st.code(url)
  
  
 
