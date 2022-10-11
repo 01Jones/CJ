@@ -58,7 +58,7 @@ if option == 'Home':
     st.subheader('Inflation Rates')
     te.login()
     cal = te.getCalendarData(category='inflation rate', importance='3',  output_type='df')
-    cal.drop(columns=['calendarid', 'source'])
+    #cal.drop(columns=['calendarid', 'source'])
     st.write(cal)
 
 
