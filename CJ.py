@@ -57,7 +57,7 @@ if option == 'Home':
     
     
     te.login()
-    cal = te.getCalendarData(country='united states', importance='2',  output_type='df')
+    cal = te.getCalendarData(country='united states', importance='1',  output_type='df')
     st.write(cal)
 
 
