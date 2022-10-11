@@ -15,6 +15,7 @@ import pydeck as pdk
 import statsmodels.api as sm
 import nasdaqdatalink
 from sec_api import QueryApi
+import tradingeconomics as te
 
 # fred API 49dc69fb7e224d27e8cd2f5b4830ac9f
 # Nasdaq API KtkauE_-pic1EFrCBFb4
@@ -53,6 +54,11 @@ if option == 'Home':
     col1.metric("Temperature", current, "1.2 °F")
     col2.metric("Wind", w, "3mph")
     col3.metric("Humidity", h, "4%")
+    
+    
+    te.login()
+    cal = te.getCalendarData(country='united states', importance='2',  output_type='df')
+    st.write(cal)
 
 
 
