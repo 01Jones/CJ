@@ -60,6 +60,8 @@ if option == 'Home':
     cal = te.getCalendarData(category='inflation rate', importance='3',  output_type='df')
     ca = cal.drop(columns=['CalendarId', 'Source'])
     st.write(ca)
+    
+    te.getIndicatorByTicker(ticker='usurtot', output_type='df')
 
 
 
