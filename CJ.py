@@ -55,9 +55,10 @@ if option == 'Home':
     col2.metric("Wind", w, "3mph")
     col3.metric("Humidity", h, "4%")
     
-    
+    st.subheader('Inflation Rates')
     te.login()
     cal = te.getCalendarData(category='inflation rate', importance='3',  output_type='df')
+    cal.drop('calendarid')
     st.write(cal)
 
 
