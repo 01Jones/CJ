@@ -53,16 +53,7 @@ if option == 'Home':
     col1.metric("Temperature", current, "1.2 °F")
     col2.metric("Wind", w, "3mph")
     col3.metric("Humidity", h, "4%")
-   
- 
-    #map
-    st.pydeck_chart(pdk.Deck(
-         map_style='mapbox://styles/mapbox/dark-v8',
-         initial_view_state=pdk.ViewState(
-         latitude=41.87,
-         longitude=-87.62,
-         zoom=11,
-         pitch=50)))
+
 
 
 
