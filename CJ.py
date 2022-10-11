@@ -57,7 +57,7 @@ if option == 'Home':
     
     
     te.login()
-    cal = te.getCalendarData(country='united states', output_type='df')
+    cal = te.getCalendarData(category='inflation rate', output_type='df')
     st.write(cal)
 
 
